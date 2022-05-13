@@ -1,0 +1,971 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.cache/ip 
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 291.215 ; gain = 2.316
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10504 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 764.109 ; gain = 177.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:847]
+INFO: [Synth 8-6157] synthesizing module 'AXI2DVI_imp_U2N5WR' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (2#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi4s_vid_out' of module 'design_1_v_axi4s_vid_out_0_0' has 31 connections declared, but only 23 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:73]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rgb2dvi_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rgb2dvi_0_0' (3#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_rgb2dvi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_0_0' (4#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_v_tc_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_tc' of module 'design_1_v_tc_0_0' has 10 connections declared, but only 9 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'AXI2DVI_imp_U2N5WR' (5#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Interrupt_imp_1ET0W4U' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:120]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (6#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 3 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (7#1) [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (8#1) [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'Interrupt_imp_1ET0W4U' (9#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:120]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:245]
+INFO: [Synth 8-6157] synthesizing module 'design_1_LF_valid_to_AXIS_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_LF_valid_to_AXIS_0_0' (10#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_LF_valid_to_AXIS_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'LF_valid_to_AXIS' of module 'design_1_LF_valid_to_AXIS_0_0' has 12 connections declared, but only 9 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:313]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (11#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_c_counter_binary_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_c_counter_binary_0_0' (12#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_c_counter_binary_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'c_counter_binary' of module 'design_1_c_counter_binary_0_0' has 3 connections declared, but only 2 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:333]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_3' [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (13#1) [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_3' (14#1) [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_3/synth/design_1_xlconstant_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_LUMA_CHROMA_0_0' (15#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_ov7670_LUMA_CHROMA_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ov7670_LUMA_CHROMA' of module 'design_1_ov7670_LUMA_CHROMA_0_0' has 19 connections declared, but only 12 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:338]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_interface_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_ov7670_interface_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_interface_0_0' (16#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_ov7670_interface_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ov7670_interface' of module 'design_1_ov7670_interface_0_0' has 12 connections declared, but only 9 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:351]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF' (17#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:245]
+INFO: [Synth 8-6157] synthesizing module 'Reset_imp_VUYUUT' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:363]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (18#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'reset_100M' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:398]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_0' (19#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'reset_24M_RnM' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 7 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:405]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_1' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_1' (20#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'reset_48M' of module 'design_1_proc_sys_reset_0_1' has 10 connections declared, but only 6 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:413]
+INFO: [Synth 8-6155] done synthesizing module 'Reset_imp_VUYUUT' (21#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:363]
+INFO: [Synth 8-6157] synthesizing module 'VDMA_imp_148AGHI' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:422]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (22#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_vdma_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_vdma' of module 'design_1_axi_vdma_0_0' has 67 connections declared, but only 64 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:710]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_0' (23#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VDMA_imp_148AGHI' (24#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:422]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (25#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (26#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_iic' of module 'design_1_axi_iic_0_0' has 27 connections declared, but only 26 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:1312]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (27#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'filter_imp_QO7DPV' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2538]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axistream2axivideo_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axistream2axivideo_0_0' (28#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_axistream2axivideo_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axistream2axivideo' of module 'design_1_axistream2axivideo_0_0' has 24 connections declared, but only 21 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2675]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (29#1) [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_convolution_filter_0_2' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_convolution_filter_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_convolution_filter_0_2' (30#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_convolution_filter_0_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'convolution_filter' of module 'design_1_convolution_filter_0_2' has 29 connections declared, but only 26 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2699]
+INFO: [Synth 8-6157] synthesizing module 'design_1_gray2rgb_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_gray2rgb_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gray2rgb_0_0' (31#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_gray2rgb_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'gray2rgb' of module 'design_1_gray2rgb_0_0' has 24 connections declared, but only 18 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'design_1_scaleImage_0_1' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_scaleImage_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_scaleImage_0_1' (32#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_scaleImage_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'scaleImage' of module 'design_1_scaleImage_0_1' has 24 connections declared, but only 21 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2745]
+INFO: [Synth 8-6155] done synthesizing module 'filter_imp_QO7DPV' (33#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2538]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (34#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'processing_system7' of module 'design_1_processing_system7_0_0' has 112 connections declared, but only 103 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:1372]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:1615]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2769]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (35#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2769]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2901]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (36#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2901]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_14WQB4R' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3033]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_14WQB4R' (37#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3033]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_YFYJ3U' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3158]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_YFYJ3U' (38#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3158]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_17KQ732' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3290]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_17KQ732' (39#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3290]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3422]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (40#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (41#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:3422]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (42#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/.Xil/Vivado-2616-DESKTOP-V7IGHGP/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 40 connections declared, but only 38 given [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:2497]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (43#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:1615]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (44#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/synth/design_1.v:847]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (45#1) [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_17KQ732 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_17KQ732 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_17KQ732 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_17KQ732 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_YFYJ3U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_YFYJ3U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_YFYJ3U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_YFYJ3U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_14WQB4R has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_XU9C55 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M04_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[31]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[30]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[29]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[28]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[27]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[26]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[25]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[24]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[23]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[22]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[21]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[20]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[19]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[18]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[17]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[16]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[15]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[14]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[13]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[12]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[11]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[10]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[9]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[8]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_araddr[7]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[31]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[30]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[29]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[28]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[27]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[26]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[25]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[24]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[23]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[22]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[21]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[20]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[19]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[18]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[17]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[16]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[15]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[14]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[13]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[12]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[11]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[10]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[9]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[8]
+WARNING: [Synth 8-3331] design filter_imp_QO7DPV has unconnected port s_axi_AXILiteS_awaddr[7]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[31]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[30]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[29]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[28]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[27]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[26]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[25]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[24]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[23]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[22]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[21]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[20]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[19]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[18]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[17]
+WARNING: [Synth 8-3331] design VDMA_imp_148AGHI has unconnected port S_AXI_LITE_araddr[16]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 835.941 ; gain = 249.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 835.941 ; gain = 249.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 835.941 ; gain = 249.785
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/Reset/reset_24M_RnM'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/Reset/reset_24M_RnM'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0/design_1_v_tc_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/v_tc'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0/design_1_v_tc_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/v_tc'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/axi4s_vid_out'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/axi4s_vid_out'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/rgb2dvi'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc] for cell 'design_1_i/AXI2DVI/rgb2dvi'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/design_1_scaleImage_0_1/design_1_scaleImage_0_1_in_context.xdc] for cell 'design_1_i/filter/scaleImage'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_scaleImage_0_1/design_1_scaleImage_0_1/design_1_scaleImage_0_1_in_context.xdc] for cell 'design_1_i/filter/scaleImage'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_gray2rgb_0_0_1/design_1_gray2rgb_0_0/design_1_gray2rgb_0_0_in_context.xdc] for cell 'design_1_i/filter/gray2rgb'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_gray2rgb_0_0_1/design_1_gray2rgb_0_0/design_1_gray2rgb_0_0_in_context.xdc] for cell 'design_1_i/filter/gray2rgb'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/design_1_axistream2axivideo_0_0/design_1_axistream2axivideo_0_0_in_context.xdc] for cell 'design_1_i/filter/axistream2axivideo'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axistream2axivideo_0_0/design_1_axistream2axivideo_0_0/design_1_axistream2axivideo_0_0_in_context.xdc] for cell 'design_1_i/filter/axistream2axivideo'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/design_1_convolution_filter_0_2/design_1_convolution_filter_0_2_in_context.xdc] for cell 'design_1_i/filter/convolution_filter'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_convolution_filter_0_2/design_1_convolution_filter_0_2/design_1_convolution_filter_0_2_in_context.xdc] for cell 'design_1_i/filter/convolution_filter'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/VDMA/axi_vdma'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/VDMA/axi_vdma'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/VDMA/smartconnect'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/design_1_smartconnect_0_0/design_1_smartconnect_0_0_in_context.xdc] for cell 'design_1_i/VDMA/smartconnect'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/Interrupt/axi_intc'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/Interrupt/axi_intc'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_ov7670_interface_0_0/design_1_ov7670_interface_0_0/design_1_ov7670_interface_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_interface'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_ov7670_interface_0_0/design_1_ov7670_interface_0_0/design_1_ov7670_interface_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_interface'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0/design_1_LF_valid_to_AXIS_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_ov7670_LUMA_CHROMA_0_0/design_1_ov7670_LUMA_CHROMA_0_0/design_1_ov7670_LUMA_CHROMA_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_ov7670_LUMA_CHROMA_0_0/design_1_ov7670_LUMA_CHROMA_0_0/design_1_ov7670_LUMA_CHROMA_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/Reset/reset_100M'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/Reset/reset_100M'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0/design_1_c_counter_binary_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/axis_data_fifo'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_in_context.xdc] for cell 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/axis_data_fifo'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/Reset/reset_48M'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/Reset/reset_48M'
+Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET_tri_o[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'OV7670_RESET_tri_o[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[7]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[6]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[5]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[4]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[3]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[2]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[1]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[2]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[4]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[6]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[1]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[3]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[5]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'data_in_V[7]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'href_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'vsync_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'href_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'vsync_V[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:34]
+WARNING: [Vivado 12-507] No nets matched 'PCLK_IBUF'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'lines_V_0[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'lines_V_0[0]'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'ext_reset_in_1'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'ext_reset_in_1'. [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc:59]
+Finished Parsing XDC File [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 917.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 917.582 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary' at clock pin 'CLK' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '25.000' specified during out-of-context synthesis of instance 'design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA' at clock pin 'ap_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '12.500' specified during out-of-context synthesis of instance 'design_1_i/filter/convolution_filter' at clock pin 'ap_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc' at clock pin 'aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 262).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Clk_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Clk_n. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Clk_p. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Clk_p. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_n[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_n[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_n[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_n[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_n[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_n[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_p[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_p[0]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_p[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_p[1]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Data_p[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Data_p[2]. (constraint file  c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/processing_system7. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/Reset/reset_24M_RnM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/AXI2DVI/v_tc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/AXI2DVI/axi4s_vid_out. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/AXI2DVI/rgb2dvi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/filter/constant_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/filter/scaleImage. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/filter/gray2rgb. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/filter/axistream2axivideo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/filter/convolution_filter. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/VDMA/axi_vdma. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/VDMA/smartconnect. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_iic. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/Interrupt/axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/Interrupt/xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_interface. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/const_true. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/Reset/reset_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/OV7670_GRAYSCALE_TO_AXIS/axis_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/Reset/reset_48M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7/FCLK_CLK0' to pin 'design_1_i/processing_system7/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7/FCLK_CLK1' to pin 'design_1_i/processing_system7/bbstub_FCLK_CLK1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz/clk_in1' to pin 'design_1_i/processing_system7/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz/clk_out1' to pin 'design_1_i/clk_wiz/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz/clk_in1' to 'design_1_i/processing_system7/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz/clk_out2' to pin 'design_1_i/clk_wiz/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'design_1_i/clk_wiz/clk_in1' to 'design_1_i/processing_system7/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 919.543 ; gain = 333.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 930.184 ; gain = 344.027
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |design_1_xbar_0                 |         1|
+|2     |design_1_auto_pc_0              |         1|
+|3     |design_1_axi_gpio_0_0           |         1|
+|4     |design_1_axi_iic_0_0            |         1|
+|5     |design_1_clk_wiz_0_0            |         1|
+|6     |design_1_processing_system7_0_0 |         1|
+|7     |design_1_v_axi4s_vid_out_0_0    |         1|
+|8     |design_1_rgb2dvi_0_0            |         1|
+|9     |design_1_v_tc_0_0               |         1|
+|10    |design_1_axi_intc_0_0           |         1|
+|11    |design_1_LF_valid_to_AXIS_0_0   |         1|
+|12    |design_1_axis_data_fifo_0_0     |         1|
+|13    |design_1_c_counter_binary_0_0   |         1|
+|14    |design_1_ov7670_LUMA_CHROMA_0_0 |         1|
+|15    |design_1_ov7670_interface_0_0   |         1|
+|16    |design_1_proc_sys_reset_0_0     |         1|
+|17    |design_1_rst_ps7_0_100M_0       |         1|
+|18    |design_1_proc_sys_reset_0_1     |         1|
+|19    |design_1_axi_vdma_0_0           |         1|
+|20    |design_1_smartconnect_0_0       |         1|
+|21    |design_1_axistream2axivideo_0_0 |         1|
+|22    |design_1_convolution_filter_0_2 |         1|
+|23    |design_1_gray2rgb_0_0           |         1|
+|24    |design_1_scaleImage_0_1         |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_LF_valid_to_AXIS_0_0   |     1|
+|2     |design_1_auto_pc_0              |     1|
+|3     |design_1_axi_gpio_0_0           |     1|
+|4     |design_1_axi_iic_0_0            |     1|
+|5     |design_1_axi_intc_0_0           |     1|
+|6     |design_1_axi_vdma_0_0           |     1|
+|7     |design_1_axis_data_fifo_0_0     |     1|
+|8     |design_1_axistream2axivideo_0_0 |     1|
+|9     |design_1_c_counter_binary_0_0   |     1|
+|10    |design_1_clk_wiz_0_0            |     1|
+|11    |design_1_convolution_filter_0_2 |     1|
+|12    |design_1_gray2rgb_0_0           |     1|
+|13    |design_1_ov7670_LUMA_CHROMA_0_0 |     1|
+|14    |design_1_ov7670_interface_0_0   |     1|
+|15    |design_1_proc_sys_reset_0_0     |     1|
+|16    |design_1_proc_sys_reset_0_1     |     1|
+|17    |design_1_processing_system7_0_0 |     1|
+|18    |design_1_rgb2dvi_0_0            |     1|
+|19    |design_1_rst_ps7_0_100M_0       |     1|
+|20    |design_1_scaleImage_0_1         |     1|
+|21    |design_1_smartconnect_0_0       |     1|
+|22    |design_1_v_axi4s_vid_out_0_0    |     1|
+|23    |design_1_v_tc_0_0               |     1|
+|24    |design_1_xbar_0                 |     1|
+|25    |IBUF                            |    12|
+|26    |IOBUF                           |     2|
+|27    |OBUF                            |     3|
++------+--------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------------+-------------------------------------+------+
+|      |Instance                     |Module                               |Cells |
++------+-----------------------------+-------------------------------------+------+
+|1     |top                          |                                     |  2063|
+|2     |  design_1_i                 |design_1                             |  2046|
+|3     |    ps7_0_axi_periph         |design_1_ps7_0_axi_periph_0          |   773|
+|4     |      s00_couplers           |s00_couplers_imp_UYSKKA              |   177|
+|5     |    AXI2DVI                  |AXI2DVI_imp_U2N5WR                   |    92|
+|6     |    Interrupt                |Interrupt_imp_1ET0W4U                |    42|
+|7     |      xlconcat               |design_1_xlconcat_0_0                |     0|
+|8     |    OV7670_GRAYSCALE_TO_AXIS |OV7670_GRAYSCALE_TO_AXIS_imp_1400ZLF |    71|
+|9     |      const_true             |design_1_xlconstant_0_3              |     0|
+|10    |    Reset                    |Reset_imp_VUYUUT                     |    15|
+|11    |    VDMA                     |VDMA_imp_148AGHI                     |   528|
+|12    |    filter                   |filter_imp_QO7DPV                    |   131|
+|13    |      constant_true          |design_1_xlconstant_0_2              |     0|
++------+-----------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 944.945 ; gain = 358.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:35 . Memory (MB): peak = 944.945 ; gain = 275.188
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 944.945 ; gain = 358.789
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 967.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+117 Infos, 150 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 967.438 ; gain = 676.223
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 967.438 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 21 18:28:54 2022...

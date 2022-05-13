@@ -1,0 +1,560 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:58 . Memory (MB): peak = 165.723 ; gain = 74.312
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:58 . Memory (MB): peak = 165.723 ; gain = 74.312
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:01:01 . Memory (MB): peak = 165.723 ; gain = 74.312
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:01:02 . Memory (MB): peak = 200.199 ; gain = 108.789
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:01:03 . Memory (MB): peak = 258.316 ; gain = 166.906
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:01:04 . Memory (MB): peak = 271.289 ; gain = 179.879
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 64.017 seconds; current allocated memory: 207.717 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 207.934 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.717 seconds; current allocated memory: 208.750 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:01:08 . Memory (MB): peak = 271.289 ; gain = 179.879
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 68.392 seconds; peak allocated memory: 208.750 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 165.719 ; gain = 74.230
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 165.719 ; gain = 74.230
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 165.719 ; gain = 74.230
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 200.480 ; gain = 108.992
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:46 . Memory (MB): peak = 258.113 ; gain = 166.625
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:47 . Memory (MB): peak = 272.125 ; gain = 180.637
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.975 seconds; current allocated memory: 207.362 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.277 seconds; current allocated memory: 207.563 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.743 seconds; current allocated memory: 208.736 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:51 . Memory (MB): peak = 272.125 ; gain = 180.637
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 51.129 seconds; peak allocated memory: 208.736 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 165.688 ; gain = 74.207
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 165.688 ; gain = 74.207
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 165.688 ; gain = 74.207
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 200.570 ; gain = 109.090
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:42 . Memory (MB): peak = 258.883 ; gain = 167.402
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 271.191 ; gain = 179.711
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 42.477 seconds; current allocated memory: 207.589 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.201 seconds; current allocated memory: 207.813 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.619 seconds; current allocated memory: 208.631 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:46 . Memory (MB): peak = 271.191 ; gain = 179.711
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 46.157 seconds; peak allocated memory: 208.631 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: AXIStream2AXIVideo/axistream_axivideo.cpp:9:21
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file AXIStream2AXIVideo/axistream_axivideo.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 165.562 ; gain = 74.039
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:41 . Memory (MB): peak = 165.562 ; gain = 74.039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:44 . Memory (MB): peak = 165.562 ; gain = 74.039
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 201.004 ; gain = 109.480
+ERROR: [XFORM 203-313] Conflicting pipeline and dataflow directives found in function 'axistream2axivideo' (AXIStream2AXIVideo/axistream_axivideo.cpp:6:1)
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: AXIStream2AXIVideo/axistream_axivideo.cpp:9:21
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file AXIStream2AXIVideo/axistream_axivideo.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 165.934 ; gain = 74.402
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 165.934 ; gain = 74.402
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 165.934 ; gain = 74.402
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 201.812 ; gain = 110.281
+ERROR: [XFORM 203-313] Conflicting pipeline and dataflow directives found in function 'axistream2axivideo' (AXIStream2AXIVideo/axistream_axivideo.cpp:6:1)
+ERROR: [HLS 200-70] Pre-synthesis failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 166.176 ; gain = 75.332
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 166.176 ; gain = 75.332
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 166.176 ; gain = 75.332
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 201.332 ; gain = 110.488
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 258.578 ; gain = 167.734
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:43 . Memory (MB): peak = 272.027 ; gain = 181.184
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 42.801 seconds; current allocated memory: 207.410 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.198 seconds; current allocated memory: 207.611 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.593 seconds; current allocated memory: 208.799 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:46 . Memory (MB): peak = 272.027 ; gain = 181.184
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 46.49 seconds; peak allocated memory: 208.799 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:48 . Memory (MB): peak = 166.062 ; gain = 74.555
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:48 . Memory (MB): peak = 166.062 ; gain = 74.555
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:51 . Memory (MB): peak = 166.062 ; gain = 74.555
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:51 . Memory (MB): peak = 200.758 ; gain = 109.250
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:52 . Memory (MB): peak = 258.477 ; gain = 166.969
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:53 . Memory (MB): peak = 271.441 ; gain = 179.934
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 53.198 seconds; current allocated memory: 207.546 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.212 seconds; current allocated memory: 207.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.762 seconds; current allocated memory: 208.571 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:57 . Memory (MB): peak = 271.441 ; gain = 179.934
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 56.791 seconds; peak allocated memory: 208.571 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:52 . Memory (MB): peak = 166.133 ; gain = 74.648
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:52 . Memory (MB): peak = 166.133 ; gain = 74.648
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:54 . Memory (MB): peak = 166.133 ; gain = 74.648
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:55 . Memory (MB): peak = 200.441 ; gain = 108.957
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:56 . Memory (MB): peak = 258.391 ; gain = 166.906
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:57 . Memory (MB): peak = 271.582 ; gain = 180.098
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 57.624 seconds; current allocated memory: 207.541 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.396 seconds; current allocated memory: 207.765 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.605 seconds; current allocated memory: 208.567 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:01:02 . Memory (MB): peak = 271.582 ; gain = 180.098
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 62.024 seconds; peak allocated memory: 208.567 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 166.242 ; gain = 76.043
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 166.242 ; gain = 76.043
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 166.242 ; gain = 76.043
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:46 . Memory (MB): peak = 201.066 ; gain = 110.867
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:47 . Memory (MB): peak = 259.332 ; gain = 169.133
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:48 . Memory (MB): peak = 271.777 ; gain = 181.578
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 48.224 seconds; current allocated memory: 207.546 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.245 seconds; current allocated memory: 207.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.842 seconds; current allocated memory: 208.571 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:52 . Memory (MB): peak = 271.777 ; gain = 181.578
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 52.262 seconds; peak allocated memory: 208.571 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'AXIStream2AXIVideo/axistream_axivideo.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 165.590 ; gain = 74.105
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 165.590 ; gain = 74.105
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:44 . Memory (MB): peak = 165.590 ; gain = 74.105
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 200.762 ; gain = 109.277
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 259.262 ; gain = 167.777
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:47 . Memory (MB): peak = 272.211 ; gain = 180.727
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'axistream2axivideo' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'axistream2axivideo'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.752 seconds; current allocated memory: 207.409 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.219 seconds; current allocated memory: 207.610 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axistream2axivideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'axistream2axivideo/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'axistream2axivideo' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'pixels_V' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lines_V' is power-on initialization.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axistream2axivideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.759 seconds; current allocated memory: 208.799 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:51 . Memory (MB): peak = 272.211 ; gain = 180.727
+INFO: [VHDL 208-304] Generating VHDL RTL for axistream2axivideo.
+INFO: [VLOG 209-307] Generating Verilog RTL for axistream2axivideo.
+INFO: [HLS 200-112] Total elapsed time: 50.706 seconds; peak allocated memory: 208.799 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

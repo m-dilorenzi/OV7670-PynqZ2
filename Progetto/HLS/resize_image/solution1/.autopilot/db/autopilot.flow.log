@@ -1,0 +1,1317 @@
+INFO-FLOW: Workspace C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1 opened at Wed Apr 13 17:42:32 +0200 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.305 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.405 sec.
+Command     ap_source done; 0.405 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.599 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.981 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.536 sec.
+Execute   set_part xc7z020-clg400-1 -tool vivado 
+Execute     ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.205 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_export -format ip_catalog -rtl verilog 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'resize_image/resize_image.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling resize_image/resize_image.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       is_encrypted resize_image/resize_image.cpp 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "resize_image/resize_image.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E resize_image/resize_image.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp
+Command       clang done; 3.302 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 6.062 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp"  -o "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/useless.bc
+Command       clang done; 10.272 sec.
+INFO-FLOW: Done: GCC PP time: 19.6 seconds per iteration
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp std=gnu++98 -directive=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 5.558 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp std=gnu++98 -directive=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 5.055 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/xilinx-dataflow-lawyer.resize_image.pp.0.cpp.diag.yml C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/xilinx-dataflow-lawyer.resize_image.pp.0.cpp.out.log 2> C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/xilinx-dataflow-lawyer.resize_image.pp.0.cpp.err.log 
+Command       ap_eval done; 2.926 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/tidy-3.1.resize_image.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/tidy-3.1.resize_image.pp.0.cpp.out.log 2> C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/tidy-3.1.resize_image.pp.0.cpp.err.log 
+Command         ap_eval done; 7.792 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/xilinx-legacy-rewriter.resize_image.pp.0.cpp.out.log 2> C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/xilinx-legacy-rewriter.resize_image.pp.0.cpp.err.log 
+Command         ap_eval done; 3.273 sec.
+Command       tidy_31 done; 11.139 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 19.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 6.049 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.bc
+Command       clang done; 10.316 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/resize_image.g.bc -hls-opt -except-internalize scaleImage -LC:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 2.683 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:01:07 . Memory (MB): peak = 165.668 ; gain = 74.152
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:01:07 . Memory (MB): peak = 165.668 ; gain = 74.152
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.pp.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.587 sec.
+Execute         llvm-ld C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.931 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top scaleImage -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.0.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<600, 800, 0>::read()' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<600, 800, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat<480, 640, 0>::read()' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_mem.h:123) in function 'hls::Window<1, 4, hls::Scalar<1, unsigned char> >::shift_pixels_left()' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::Mat<480, 640, 0>::write(hls::Scalar<1, unsigned char>)' completely with a factor of 1.
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 0>::init' into 'hls::Mat<480, 640, 0>::Mat.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<600, 800, 0>::init' into 'hls::Mat<600, 800, 0>::Mat.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>.1' into 'hls::AXIGetBitFields<8, unsigned char>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<8, unsigned char>' into 'hls::AXIvideo2Mat<8, 480, 640, 0>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 0>::write' into 'hls::Mat<480, 640, 0>::operator<<' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 0>::operator<<' into 'hls::AXIvideo2Mat<8, 480, 640, 0>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 0>::read' into 'hls::Mat<480, 640, 0>::operator>>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 0>::operator>>' into 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2405).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<600, 800, 0>::write' into 'hls::Mat<600, 800, 0>::operator<<' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<600, 800, 0>::operator<<' into 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2439).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<600, 800, 0>::read' into 'hls::Mat<600, 800, 0>::operator>>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<600, 800, 0>::operator>>' into 'hls::Mat2AXIvideo<8, 600, 800, 0>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>.1' into 'hls::AXISetBitFields<8, unsigned char>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<8, unsigned char>' into 'hls::Mat2AXIvideo<8, 600, 800, 0>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 2.111 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:01:12 . Memory (MB): peak = 214.574 ; gain = 123.059
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.1.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<26, 12, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<26, 12, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<26, 12, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2437) automatically.
+Command         transform done; 1.127 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.487 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:01:14 . Memory (MB): peak = 248.242 ; gain = 156.727
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.g.1.bc to C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.1.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'outImage.data_stream.V' (resize_image/resize_image.cpp:8).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'inImage.data_stream.V' (resize_image/resize_image.cpp:7).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2314) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2394) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.2' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2418) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.3' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2428) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' completely with a factor of 1.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inImage.data_stream.V' (resize_image/resize_image.cpp:7) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'outImage.data_stream.V' (resize_image/resize_image.cpp:8) .
+INFO: [XFORM 203-101] Partitioning array 'k_buf.val.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2285) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.val.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2286) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 's.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2295) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'd.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2295) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inImage.data_stream.V' (resize_image/resize_image.cpp:7) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'outImage.data_stream.V' (resize_image/resize_image.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'k_buf.val.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2285) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.val.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2286) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'win.val.val' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2286) in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<26, 12, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<26, 12, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<26, 12, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2437) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'scaleImage', detected/extracted 4 process function(s): 
+	 'Block__proc'
+	 'hls::AXIvideo2Mat<8, 480, 640, 0>'
+	 'hls::Resize<0, 480, 640, 600, 800>'
+	 'hls::Mat2AXIvideo<8, 600, 800, 0>'.
+Command         transform done; 3.481 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2323:45) to (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2392:13) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>'... converting 16 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2433:23) to (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2440:13) in function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>'... converting 5 basic blocks.
+Command         transform done; 1.911 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:01:19 . Memory (MB): peak = 316.449 ; gain = 224.934
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.2.bc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::Resize_opr_linear<0, 480, 640, 600, 800>' to 'Resize_opr_linear' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:409:21)
+WARNING: [XFORM 203-631] Renaming function 'hls::Resize<0, 480, 640, 600, 800>' to 'Resize' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2454:9)
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<8, 600, 800, 0>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:120:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<8, 480, 640, 0>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:60:9)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.1.0'.
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.0.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'.
+Command         transform done; 3.566 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:15 ; elapsed = 00:01:23 . Memory (MB): peak = 367.270 ; gain = 275.754
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 15.293 sec.
+Command     elaborate done; 79.856 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'scaleImage' ...
+Execute       ap_set_top_model scaleImage 
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+Execute       get_model_list scaleImage -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model scaleImage 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model Resize 
+Execute       preproc_iomode -model Resize_opr_linear 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       preproc_iomode -model Block__proc 
+Execute       get_model_list scaleImage -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO-FLOW: Configuring Module : Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       apply_spec_resource_limit Block__proc 
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : Resize_opr_linear ...
+Execute       set_default_model Resize_opr_linear 
+Execute       apply_spec_resource_limit Resize_opr_linear 
+INFO-FLOW: Configuring Module : Resize ...
+Execute       set_default_model Resize 
+Execute       apply_spec_resource_limit Resize 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : scaleImage ...
+Execute       set_default_model scaleImage 
+Execute       apply_spec_resource_limit scaleImage 
+INFO-FLOW: Model list for preprocess: Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO-FLOW: Preprocessing Module: Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       cdfg_preprocess -model Block__proc 
+Execute       rtl_gen_preprocess Block__proc 
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: Resize_opr_linear ...
+Execute       set_default_model Resize_opr_linear 
+Execute       cdfg_preprocess -model Resize_opr_linear 
+Execute       rtl_gen_preprocess Resize_opr_linear 
+INFO-FLOW: Preprocessing Module: Resize ...
+Execute       set_default_model Resize 
+Execute       cdfg_preprocess -model Resize 
+Execute       rtl_gen_preprocess Resize 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: scaleImage ...
+Execute       set_default_model scaleImage 
+Execute       cdfg_preprocess -model scaleImage 
+Execute       rtl_gen_preprocess scaleImage 
+INFO-FLOW: Model list for synthesis: Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block__proc 
+Execute       schedule -model Block__proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.357 sec.
+INFO: [HLS 200-111]  Elapsed time: 83.232 seconds; current allocated memory: 310.888 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.verbose.sched.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Block__proc.
+Execute       set_default_model Block__proc 
+Execute       bind -model Block__proc 
+BIND OPTION: model=Block__proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 310.977 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.verbose.bind.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.bind.adb -f 
+INFO-FLOW: Finish binding Block__proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.736 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.934 seconds; current allocated memory: 311.171 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: model=AXIvideo2Mat
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.294 seconds; current allocated memory: 311.506 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Resize_opr_linear' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Resize_opr_linear 
+Execute       schedule -model Resize_opr_linear 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 39.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.637 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.876 seconds; current allocated memory: 312.791 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.verbose.sched.rpt 
+Command       syn_report done; 0.616 sec.
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.sched.adb -f 
+Command       db_write done; 0.205 sec.
+INFO-FLOW: Finish scheduling Resize_opr_linear.
+Execute       set_default_model Resize_opr_linear 
+Execute       bind -model Resize_opr_linear 
+BIND OPTION: model=Resize_opr_linear
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.318 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.262 seconds; current allocated memory: 314.298 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.verbose.bind.rpt 
+Command       syn_report done; 0.727 sec.
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.bind.adb -f 
+Command       db_write done; 0.223 sec.
+INFO-FLOW: Finish binding Resize_opr_linear.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Resize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Resize 
+Execute       schedule -model Resize 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.49 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.569 seconds; current allocated memory: 314.589 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.verbose.sched.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.sched.adb -f 
+INFO-FLOW: Finish scheduling Resize.
+Execute       set_default_model Resize 
+Execute       bind -model Resize 
+BIND OPTION: model=Resize
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.149 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.381 seconds; current allocated memory: 314.724 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.verbose.bind.rpt 
+Command       syn_report done; 0.314 sec.
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.bind.adb -f 
+INFO-FLOW: Finish binding Resize.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.371 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.976 seconds; current allocated memory: 314.978 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: model=Mat2AXIvideo
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.298 seconds; current allocated memory: 315.250 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'scaleImage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model scaleImage 
+Execute       schedule -model scaleImage 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.311 seconds; current allocated memory: 315.354 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.verbose.sched.rpt 
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.sched.adb -f 
+INFO-FLOW: Finish scheduling scaleImage.
+Execute       set_default_model scaleImage 
+Execute       bind -model scaleImage 
+BIND OPTION: model=scaleImage
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.458 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.651 seconds; current allocated memory: 315.814 MB.
+Execute       syn_report -verbosereport -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.verbose.bind.rpt 
+Command       syn_report done; 0.396 sec.
+Execute       db_write -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.bind.adb -f 
+INFO-FLOW: Finish binding scaleImage.
+Execute       get_model_list scaleImage -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Block__proc 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess Resize_opr_linear 
+Execute       rtl_gen_preprocess Resize 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess scaleImage 
+INFO-FLOW: Model list for RTL generation: Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Block__proc -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.694 seconds; current allocated memory: 316.062 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block__proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/Block_proc -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/Block_proc 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/Block_proc 
+Execute       syn_report -csynth -model Block__proc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Block_proc_csynth.rpt 
+Execute       syn_report -rtlxml -model Block__proc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Block_proc_csynth.xml 
+Execute       syn_report -verbosereport -model Block__proc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.verbose.rpt 
+Execute       db_write -model Block__proc -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.adb 
+Execute       gen_tb_info Block__proc -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.411 seconds; current allocated memory: 317.011 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/AXIvideo2Mat -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/AXIvideo2Mat 
+Execute       syn_report -csynth -model AXIvideo2Mat -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/AXIvideo2Mat_csynth.rpt 
+Command       syn_report done; 0.138 sec.
+Execute       syn_report -rtlxml -model AXIvideo2Mat -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/AXIvideo2Mat_csynth.xml 
+Execute       syn_report -verbosereport -model AXIvideo2Mat -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.verbose.rpt 
+Command       syn_report done; 0.118 sec.
+Execute       db_write -model AXIvideo2Mat -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.adb 
+Execute       gen_tb_info AXIvideo2Mat -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Resize_opr_linear' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Resize_opr_linear -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Resize_opr_linear_k_buf_val_val_0_0' to 'Resize_opr_linearbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Resize_opr_linear_k_buf_val_val_1_0' to 'Resize_opr_linearcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scaleImage_sdiv_43ns_27s_43_47_seq_1' to 'scaleImage_sdiv_4dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scaleImage_sdiv_42ns_27s_42_46_seq_1' to 'scaleImage_sdiv_4eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scaleImage_udiv_26ns_32s_11_30_1' to 'scaleImage_udiv_2fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'scaleImage_mul_mul_8ns_20s_28_1_1' to 'scaleImage_mul_mug8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'scaleImage_mul_mug8j': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scaleImage_sdiv_4dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scaleImage_sdiv_4eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'scaleImage_udiv_2fYi': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Resize_opr_linear'.
+Command       create_rtl_model done; 0.471 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.289 seconds; current allocated memory: 320.062 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Resize_opr_linear -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/Resize_opr_linear -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl Resize_opr_linear -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/Resize_opr_linear 
+Execute       gen_rtl Resize_opr_linear -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/Resize_opr_linear 
+Execute       syn_report -csynth -model Resize_opr_linear -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Resize_opr_linear_csynth.rpt 
+Command       syn_report done; 0.27 sec.
+Execute       syn_report -rtlxml -model Resize_opr_linear -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Resize_opr_linear_csynth.xml 
+Command       syn_report done; 0.214 sec.
+Execute       syn_report -verbosereport -model Resize_opr_linear -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.verbose.rpt 
+Command       syn_report done; 0.728 sec.
+Execute       db_write -model Resize_opr_linear -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.adb 
+Command       db_write done; 0.534 sec.
+Execute       gen_tb_info Resize_opr_linear -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Resize' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Resize -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Resize'.
+INFO: [HLS 200-111]  Elapsed time: 3.212 seconds; current allocated memory: 320.979 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Resize -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/Resize -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl Resize -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/Resize 
+Execute       gen_rtl Resize -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/Resize 
+Execute       syn_report -csynth -model Resize -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Resize_csynth.rpt 
+Execute       syn_report -rtlxml -model Resize -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Resize_csynth.xml 
+Execute       syn_report -verbosereport -model Resize -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.verbose.rpt 
+Command       syn_report done; 0.465 sec.
+Execute       db_write -model Resize -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.adb 
+Execute       gen_tb_info Resize -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 1.024 seconds; current allocated memory: 321.897 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/Mat2AXIvideo -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/Mat2AXIvideo 
+Execute       syn_report -csynth -model Mat2AXIvideo -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Mat2AXIvideo_csynth.rpt 
+Execute       syn_report -rtlxml -model Mat2AXIvideo -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/Mat2AXIvideo_csynth.xml 
+Execute       syn_report -verbosereport -model Mat2AXIvideo -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.verbose.rpt 
+Execute       db_write -model Mat2AXIvideo -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.adb 
+Command       db_write done; 0.144 sec.
+Execute       gen_tb_info Mat2AXIvideo -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'scaleImage' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model scaleImage -vendor xilinx -mg_file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'scaleImage/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'scaleImage' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'scaleImage'.
+Command       create_rtl_model done; 0.349 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.044 seconds; current allocated memory: 322.636 MB.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       gen_rtl scaleImage -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/systemc/scaleImage -synmodules Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage 
+Execute       gen_rtl scaleImage -istop -style xilinx -f -lang vhdl -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/vhdl/scaleImage 
+Execute       gen_rtl scaleImage -istop -style xilinx -f -lang vlog -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/verilog/scaleImage 
+Execute       syn_report -csynth -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/scaleImage_csynth.rpt 
+Execute       syn_report -rtlxml -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/syn/report/scaleImage_csynth.xml 
+Execute       syn_report -verbosereport -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.verbose.rpt 
+Command       syn_report done; 0.361 sec.
+Execute       db_write -model scaleImage -f -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.adb 
+Command       db_write done; 0.234 sec.
+Execute       gen_tb_info scaleImage -p C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage 
+Execute       export_constraint_db -f -tool general -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+Execute       syn_report -designview -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.design.xml 
+Command       syn_report done; 0.627 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model scaleImage -o C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks scaleImage 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain scaleImage 
+INFO-FLOW: Model list for RTL component generation: Block__proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO-FLOW: Handling components in module [Block_proc] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [Resize_opr_linear] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+INFO-FLOW: Found component scaleImage_sdiv_4dEe.
+INFO-FLOW: Append model scaleImage_sdiv_4dEe
+INFO-FLOW: Found component scaleImage_sdiv_4eOg.
+INFO-FLOW: Append model scaleImage_sdiv_4eOg
+INFO-FLOW: Found component scaleImage_udiv_2fYi.
+INFO-FLOW: Append model scaleImage_udiv_2fYi
+INFO-FLOW: Found component scaleImage_mul_mug8j.
+INFO-FLOW: Append model scaleImage_mul_mug8j
+INFO-FLOW: Found component Resize_opr_linearbkb.
+INFO-FLOW: Append model Resize_opr_linearbkb
+INFO-FLOW: Found component Resize_opr_linearcud.
+INFO-FLOW: Append model Resize_opr_linearcud
+INFO-FLOW: Handling components in module [Resize] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [scaleImage] ... 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+INFO-FLOW: Found component fifo_w10_d2_A.
+INFO-FLOW: Append model fifo_w10_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component fifo_w11_d3_A.
+INFO-FLOW: Append model fifo_w11_d3_A
+INFO-FLOW: Found component fifo_w11_d3_A.
+INFO-FLOW: Append model fifo_w11_d3_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w10_d2_A.
+INFO-FLOW: Append model fifo_w10_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component start_for_Resize_U0.
+INFO-FLOW: Append model start_for_Resize_U0
+INFO-FLOW: Found component start_for_Mat2AXIhbi.
+INFO-FLOW: Append model start_for_Mat2AXIhbi
+INFO-FLOW: Append model Block_proc
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model Resize_opr_linear
+INFO-FLOW: Append model Resize
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model scaleImage
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: scaleImage_sdiv_4dEe scaleImage_sdiv_4eOg scaleImage_udiv_2fYi scaleImage_mul_mug8j Resize_opr_linearbkb Resize_opr_linearcud fifo_w10_d2_A fifo_w11_d2_A fifo_w11_d3_A fifo_w11_d3_A fifo_w8_d2_A fifo_w10_d2_A fifo_w11_d2_A fifo_w8_d2_A fifo_w11_d2_A fifo_w11_d2_A start_for_Resize_U0 start_for_Mat2AXIhbi Block_proc AXIvideo2Mat Resize_opr_linear Resize Mat2AXIvideo scaleImage
+INFO-FLOW: To file: write model scaleImage_sdiv_4dEe
+INFO-FLOW: To file: write model scaleImage_sdiv_4eOg
+INFO-FLOW: To file: write model scaleImage_udiv_2fYi
+INFO-FLOW: To file: write model scaleImage_mul_mug8j
+INFO-FLOW: To file: write model Resize_opr_linearbkb
+INFO-FLOW: To file: write model Resize_opr_linearcud
+INFO-FLOW: To file: write model fifo_w10_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model fifo_w11_d3_A
+INFO-FLOW: To file: write model fifo_w11_d3_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w10_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model start_for_Resize_U0
+INFO-FLOW: To file: write model start_for_Mat2AXIhbi
+INFO-FLOW: To file: write model Block_proc
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model Resize_opr_linear
+INFO-FLOW: To file: write model Resize
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model scaleImage
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.181 sec.
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.275 sec.
+Command       ap_source done; 0.276 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'scaleImage_sdiv_4dEe_div'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'scaleImage_sdiv_4eOg_div'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'scaleImage_udiv_2fYi_div'
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'Resize_opr_linearbkb_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'Resize_opr_linearcud_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command       ap_source done; 0.521 sec.
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inImage_rows_V_c_U(fifo_w10_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inImage_cols_V_c_U(fifo_w11_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'outImage_rows_V_c_U(fifo_w11_d3_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'outImage_cols_V_c_U(fifo_w11_d3_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inImage_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inImage_rows_V_c8_U(fifo_w10_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inImage_cols_V_c9_U(fifo_w11_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'outImage_data_stream_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'outImage_rows_V_c10_U(fifo_w11_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'outImage_cols_V_c11_U(fifo_w11_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Resize_U0_U(start_for_Resize_U0)' using Shift Registers.
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIhbi_U(start_for_Mat2AXIhbi)' using Shift Registers.
+Command       ap_source done; 0.555 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.229 sec.
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.33 sec.
+Command       ap_source done; 0.331 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=scaleImage xml_exists=0
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=30
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=24 #gSsdmPorts=30
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.dataonly.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+Execute       sc_get_clocks scaleImage 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.tbgen.tcl 
+Execute       source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:01:46 . Memory (MB): peak = 398.434 ; gain = 306.918
+INFO: [VHDL 208-304] Generating VHDL RTL for scaleImage.
+INFO: [VLOG 209-307] Generating Verilog RTL for scaleImage.
+Command     autosyn done; 23.587 sec.
+Command   csynth_design done; 103.466 sec.
+Command ap_source done; 105.26 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1 opened at Tue Apr 13 17:44:40 +0200 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.253 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.381 sec.
+Command     ap_source done; 0.382 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg400-1 
+Execute       ap_part_info -name xc7z020-clg400-1 -data single -quiet 
+Command       ap_part_info done; 0.464 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7z020-clg400-1 
+Execute         ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.704 sec.
+Execute     ap_part_info -data single -name xc7z020-clg400-1 
+Execute     ap_part_info -name xc7z020-clg400-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.255 sec.
+Execute   export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.192 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.278 sec.
+Command     ap_source done; 0.279 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.207 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.325 sec.
+Command     ap_source done; 0.326 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=scaleImage xml_exists=1
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Command     ap_source done; 0.138 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize_opr_linear.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Resize.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.compgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=30
+INFO-FLOW: DBG:CMD:       copying IP vlog from C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/impl/vhdl
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=30
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=scaleImage
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=scaleImage
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.constraint.tcl 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/scaleImage.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.222 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.327 sec.
+Command     ap_source done; 0.328 sec.
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/resize_image/solution1/impl/ip/pack.bat
+Command   export_design done; 18.43 sec.
+Command ap_source done; 19.711 sec.
+Execute cleanup_all 

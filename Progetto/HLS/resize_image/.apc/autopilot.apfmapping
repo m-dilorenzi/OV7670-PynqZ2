@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="resize_image.h" path="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\resize_image\resize_image.h"/>
+    <originFiles name="resize_image.cpp" path="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\resize_image\resize_image.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

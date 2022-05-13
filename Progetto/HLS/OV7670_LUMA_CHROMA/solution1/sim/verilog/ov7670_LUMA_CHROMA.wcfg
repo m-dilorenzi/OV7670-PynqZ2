@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ov7670_LUMA_CHROMA.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_ov7670_LUMA_CHROMA_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">outStream_CHROMA(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group7" type="group">
+            <obj_property name="label">outStream_LUMA(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group11" type="group">
+            <obj_property name="label">outStream_grayscale(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group15" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group16" type="group">
+            <obj_property name="label">enable_raw_stream(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/enable_raw_stream" type="logic">
+               <obj_property name="ElementShortName">enable_raw_stream</obj_property>
+               <obj_property name="ObjectShortName">enable_raw_stream</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group18" type="group">
+            <obj_property name="label">inStream(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">inStream_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">inStream_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">inStream_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group22" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group27" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_rst_n" type="logic">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group29" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group31" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group32" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group33" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group34" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/LENGTH_inStream_V_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_inStream_V_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_inStream_V_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_grayscale_V_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_outStream_grayscale_V_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_outStream_grayscale_V_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/LENGTH_enable_raw_stream" type="array">
+               <obj_property name="ElementShortName">LENGTH_enable_raw_stream[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_enable_raw_stream[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_LUMA_V_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_outStream_LUMA_V_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_outStream_LUMA_V_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_CHROMA_V_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_outStream_CHROMA_V_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_outStream_CHROMA_V_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group43" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group44" type="group">
+            <obj_property name="label">outStream_CHROMA(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_CHROMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_CHROMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group48" type="group">
+            <obj_property name="label">outStream_LUMA(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_LUMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_LUMA_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group52" type="group">
+            <obj_property name="label">outStream_grayscale(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">outStream_grayscale_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">outStream_grayscale_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group56" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group57" type="group">
+            <obj_property name="label">enable_raw_stream(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/enable_raw_stream" type="logic">
+               <obj_property name="ElementShortName">enable_raw_stream</obj_property>
+               <obj_property name="ObjectShortName">enable_raw_stream</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group59" type="group">
+            <obj_property name="label">inStream(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TREADY" type="logic">
+               <obj_property name="ElementShortName">inStream_V_V_TREADY</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TVALID" type="logic">
+               <obj_property name="ElementShortName">inStream_V_V_TVALID</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TDATA" type="array">
+               <obj_property name="ElementShortName">inStream_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">inStream_V_V_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

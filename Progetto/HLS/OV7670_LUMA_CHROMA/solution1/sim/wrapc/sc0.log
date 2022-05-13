@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Compiling ov7670_LUMA_CHROMA.cpp_pre.cpp.tb.cpp
+   Compiling apatb_ov7670_LUMA_CHROMA.cpp
+   Generating cosim.tv.exe

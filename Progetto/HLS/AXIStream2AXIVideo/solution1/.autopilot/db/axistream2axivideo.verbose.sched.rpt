@@ -1,0 +1,164 @@
+
+
+================================================================
+== Vivado HLS Report for 'axistream2axivideo'
+================================================================
+* Date:           Thu Apr 14 18:26:42 2022
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        AXIStream2AXIVideo
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.275|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.27>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%empty = call { i8, i1, i1, i1, i1, i1, i1 } @_ssdm_op_Read.axis.volatile.i8P.i1P.i1P.i1P.i1P.i1P.i1P(i8* %inStream_V_data_V, i1* %inStream_V_keep_V, i1* %inStream_V_strb_V, i1* %inStream_V_user_V, i1* %inStream_V_last_V, i1* %inStream_V_id_V, i1* %inStream_V_dest_V)" [AXIStream2AXIVideo/axistream_axivideo.cpp:13]   --->   Operation 3 'read' 'empty' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%tmp_data_V = extractvalue { i8, i1, i1, i1, i1, i1, i1 } %empty, 0" [AXIStream2AXIVideo/axistream_axivideo.cpp:13]   --->   Operation 4 'extractvalue' 'tmp_data_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%t_V = load i16* @pixels_V, align 2" [AXIStream2AXIVideo/axistream_axivideo.cpp:14]   --->   Operation 5 'load' 't_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (2.07ns)   --->   "%add_ln700 = add i16 1, %t_V" [AXIStream2AXIVideo/axistream_axivideo.cpp:14]   --->   Operation 6 'add' 'add_ln700' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%lines_V_load = load i9* @lines_V, align 2" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 7 'load' 'lines_V_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln16)   --->   "%trunc_ln16 = trunc i16 %t_V to i9" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 8 'trunc' 'trunc_ln16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln16)   --->   "%or_ln16 = or i9 %trunc_ln16, %lines_V_load" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 9 'or' 'or_ln16' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln16)   --->   "%tmp = call i7 @_ssdm_op_PartSelect.i7.i16.i32.i32(i16 %t_V, i32 9, i32 15)" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 10 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln16)   --->   "%or_ln = call i16 @_ssdm_op_BitConcatenate.i16.i7.i9(i7 %tmp, i9 %or_ln16)" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 11 'bitconcatenate' 'or_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (2.42ns) (out node of the LUT)   --->   "%icmp_ln16 = icmp eq i16 %or_ln, 0" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 12 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br i1 %icmp_ln16, label %._crit_edge171, label %._crit_edge170" [AXIStream2AXIVideo/axistream_axivideo.cpp:16]   --->   Operation 13 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 14 [1/1] (2.42ns)   --->   "%icmp_ln887 = icmp ult i16 %add_ln700, 640" [AXIStream2AXIVideo/axistream_axivideo.cpp:20]   --->   Operation 14 'icmp' 'icmp_ln887' <Predicate = (!icmp_ln16)> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (1.76ns)   --->   "br i1 %icmp_ln887, label %._crit_edge171, label %0" [AXIStream2AXIVideo/axistream_axivideo.cpp:20]   --->   Operation 15 'br' <Predicate = (!icmp_ln16)> <Delay = 1.76>
+ST_1 : Operation 16 [1/1] (2.42ns)   --->   "%icmp_ln879 = icmp eq i16 %add_ln700, 640" [AXIStream2AXIVideo/axistream_axivideo.cpp:23]   --->   Operation 16 'icmp' 'icmp_ln879' <Predicate = (!icmp_ln16 & !icmp_ln887)> <Delay = 2.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (1.76ns)   --->   "br i1 %icmp_ln879, label %._crit_edge175, label %._crit_edge171" [AXIStream2AXIVideo/axistream_axivideo.cpp:23]   --->   Operation 17 'br' <Predicate = (!icmp_ln16 & !icmp_ln887)> <Delay = 1.76>
+ST_1 : Operation 18 [1/1] (1.82ns)   --->   "%add_ln700_1 = add i9 %lines_V_load, 1" [AXIStream2AXIVideo/axistream_axivideo.cpp:27]   --->   Operation 18 'add' 'add_ln700_1' <Predicate = (!icmp_ln16 & !icmp_ln887 & icmp_ln879)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (1.66ns)   --->   "%icmp_ln891 = icmp ugt i9 %add_ln700_1, -33" [AXIStream2AXIVideo/axistream_axivideo.cpp:28]   --->   Operation 19 'icmp' 'icmp_ln891' <Predicate = (!icmp_ln16 & !icmp_ln887 & icmp_ln879)> <Delay = 1.66> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.66> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.96ns)   --->   "%select_ln28 = select i1 %icmp_ln891, i9 0, i9 %add_ln700_1" [AXIStream2AXIVideo/axistream_axivideo.cpp:28]   --->   Operation 20 'select' 'select_ln28' <Predicate = (!icmp_ln16 & !icmp_ln887 & icmp_ln879)> <Delay = 0.96> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "store i9 %select_ln28, i9* @lines_V, align 2" [AXIStream2AXIVideo/axistream_axivideo.cpp:27]   --->   Operation 21 'store' <Predicate = (!icmp_ln16 & !icmp_ln887 & icmp_ln879)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (1.76ns)   --->   "br label %._crit_edge171" [AXIStream2AXIVideo/axistream_axivideo.cpp:31]   --->   Operation 22 'br' <Predicate = (!icmp_ln16 & !icmp_ln887 & icmp_ln879)> <Delay = 1.76>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%pixels_V_new_1 = phi i16 [ %add_ln700, %codeRepl ], [ %add_ln700, %._crit_edge170 ], [ 0, %._crit_edge175 ], [ %add_ln700, %0 ]" [AXIStream2AXIVideo/axistream_axivideo.cpp:14]   --->   Operation 23 'phi' 'pixels_V_new_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_user_V = phi i1 [ true, %codeRepl ], [ false, %._crit_edge170 ], [ false, %._crit_edge175 ], [ false, %0 ]"   --->   Operation 24 'phi' 'tmp_user_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_last_V = phi i1 [ false, %codeRepl ], [ false, %._crit_edge170 ], [ true, %._crit_edge175 ], [ true, %0 ]"   --->   Operation 25 'phi' 'tmp_last_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i1P.i1P.i1P.i1P(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i1* %outStream_V_user_V, i1* %outStream_V_last_V, i1* %outStream_V_id_V, i1* %outStream_V_dest_V, i8 %tmp_data_V, i1 undef, i1 undef, i1 %tmp_user_V, i1 %tmp_last_V, i1 undef, i1 undef)" [AXIStream2AXIVideo/axistream_axivideo.cpp:33]   --->   Operation 26 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "store i16 %pixels_V_new_1, i16* @pixels_V, align 2" [AXIStream2AXIVideo/axistream_axivideo.cpp:14]   --->   Operation 27 'store' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_data_V), !map !54"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_keep_V), !map !58"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_strb_V), !map !62"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_user_V), !map !66"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_last_V), !map !70"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_id_V), !map !74"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %inStream_V_dest_V), !map !78"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V_data_V), !map !82"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_keep_V), !map !86"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_strb_V), !map !90"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_user_V), !map !94"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_last_V), !map !98"   --->   Operation 39 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_id_V), !map !102"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %outStream_V_dest_V), !map !106"   --->   Operation 41 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @axistream2axivideo_s) nounwind"   --->   Operation 42 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %inStream_V_data_V, i1* %inStream_V_keep_V, i1* %inStream_V_strb_V, i1* %inStream_V_user_V, i1* %inStream_V_last_V, i1* %inStream_V_id_V, i1* %inStream_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [AXIStream2AXIVideo/axistream_axivideo.cpp:4]   --->   Operation 43 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i1* %outStream_V_user_V, i1* %outStream_V_last_V, i1* %outStream_V_id_V, i1* %outStream_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [AXIStream2AXIVideo/axistream_axivideo.cpp:5]   --->   Operation 44 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [AXIStream2AXIVideo/axistream_axivideo.cpp:6]   --->   Operation 45 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i1P.i1P.i1P.i1P(i8* %outStream_V_data_V, i1* %outStream_V_keep_V, i1* %outStream_V_strb_V, i1* %outStream_V_user_V, i1* %outStream_V_last_V, i1* %outStream_V_id_V, i1* %outStream_V_dest_V, i8 %tmp_data_V, i1 undef, i1 undef, i1 %tmp_user_V, i1 %tmp_last_V, i1 undef, i1 undef)" [AXIStream2AXIVideo/axistream_axivideo.cpp:33]   --->   Operation 46 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "ret void" [AXIStream2AXIVideo/axistream_axivideo.cpp:34]   --->   Operation 47 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 6.28ns
+The critical path consists of the following:
+	'load' operation ('t.V', AXIStream2AXIVideo/axistream_axivideo.cpp:14) on static variable 'pixels_V' [37]  (0 ns)
+	'add' operation ('add_ln700', AXIStream2AXIVideo/axistream_axivideo.cpp:14) [38]  (2.08 ns)
+	'icmp' operation ('icmp_ln887', AXIStream2AXIVideo/axistream_axivideo.cpp:20) [47]  (2.43 ns)
+	multiplexor before 'phi' operation ('pixels_V_new_1', AXIStream2AXIVideo/axistream_axivideo.cpp:14) with incoming values : ('add_ln700', AXIStream2AXIVideo/axistream_axivideo.cpp:14) [59]  (1.77 ns)
+	'phi' operation ('pixels_V_new_1', AXIStream2AXIVideo/axistream_axivideo.cpp:14) with incoming values : ('add_ln700', AXIStream2AXIVideo/axistream_axivideo.cpp:14) [59]  (0 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

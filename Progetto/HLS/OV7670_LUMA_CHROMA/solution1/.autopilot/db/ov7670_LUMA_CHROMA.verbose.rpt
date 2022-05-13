@@ -1,0 +1,770 @@
+
+
+================================================================
+== Vivado HLS Report for 'ov7670_LUMA_CHROMA'
+================================================================
+* Date:           Tue Apr 12 15:55:59 2022
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        OV7670_LUMA_CHROMA
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  25.00|     0.978|        3.12|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     66|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    159|    -|
+|Register         |        -|      -|      94|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      94|    225|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_block_state2_io                        |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state4_io                        |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op22_write_state1            |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op30_write_state4            |    and   |      0|  0|   2|           1|           1|
+    |inStream_V_V_0_load_A                     |    and   |      0|  0|   2|           1|           1|
+    |inStream_V_V_0_load_B                     |    and   |      0|  0|   2|           1|           1|
+    |outStream_CHROMA_V_V_1_load_A             |    and   |      0|  0|   2|           1|           1|
+    |outStream_CHROMA_V_V_1_load_B             |    and   |      0|  0|   2|           1|           1|
+    |outStream_LUMA_V_V_1_load_A               |    and   |      0|  0|   2|           1|           1|
+    |outStream_LUMA_V_V_1_load_B               |    and   |      0|  0|   2|           1|           1|
+    |outStream_grayscale_V_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |outStream_grayscale_V_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |inStream_V_V_0_state_cmp_full             |   icmp   |      0|  0|   8|           2|           1|
+    |outStream_CHROMA_V_V_1_state_cmp_full     |   icmp   |      0|  0|   8|           2|           1|
+    |outStream_LUMA_V_V_1_state_cmp_full       |   icmp   |      0|  0|   8|           2|           1|
+    |outStream_grayscale_V_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |ap_block_state1                           |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1_io                        |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state3_io                        |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4                           |    or    |      0|  0|   2|           1|           1|
+    |xor_ln30_fu_81_p2                         |    xor   |      0|  0|   2|           1|           2|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                     |          |      0|  0|  66|          25|          22|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                            |  27|          5|    1|          5|
+    |inStream_V_V_0_data_out              |   9|          2|    8|         16|
+    |inStream_V_V_0_state                 |  15|          3|    2|          6|
+    |inStream_V_V_TDATA_blk_n             |   9|          2|    1|          2|
+    |outStream_CHROMA_V_V_1_data_out      |   9|          2|    8|         16|
+    |outStream_CHROMA_V_V_1_state         |  15|          3|    2|          6|
+    |outStream_CHROMA_V_V_TDATA_blk_n     |   9|          2|    1|          2|
+    |outStream_LUMA_V_V_1_data_out        |   9|          2|    8|         16|
+    |outStream_LUMA_V_V_1_state           |  15|          3|    2|          6|
+    |outStream_LUMA_V_V_TDATA_blk_n       |   9|          2|    1|          2|
+    |outStream_grayscale_V_V_1_data_out   |   9|          2|    8|         16|
+    |outStream_grayscale_V_V_1_state      |  15|          3|    2|          6|
+    |outStream_grayscale_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                | 159|         33|   45|        101|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+---+----+-----+-----------+
+    |                 Name                | FF| LUT| Bits| Const Bits|
+    +-------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                            |  4|   0|    4|          0|
+    |grayscale_valid                      |  1|   0|    1|          0|
+    |grayscale_valid_load_reg_103         |  1|   0|    1|          0|
+    |inStream_V_V_0_payload_A             |  8|   0|    8|          0|
+    |inStream_V_V_0_payload_B             |  8|   0|    8|          0|
+    |inStream_V_V_0_sel_rd                |  1|   0|    1|          0|
+    |inStream_V_V_0_sel_wr                |  1|   0|    1|          0|
+    |inStream_V_V_0_state                 |  2|   0|    2|          0|
+    |outStream_CHROMA_V_V_1_payload_A     |  8|   0|    8|          0|
+    |outStream_CHROMA_V_V_1_payload_B     |  8|   0|    8|          0|
+    |outStream_CHROMA_V_V_1_sel_rd        |  1|   0|    1|          0|
+    |outStream_CHROMA_V_V_1_sel_wr        |  1|   0|    1|          0|
+    |outStream_CHROMA_V_V_1_state         |  2|   0|    2|          0|
+    |outStream_LUMA_V_V_1_payload_A       |  8|   0|    8|          0|
+    |outStream_LUMA_V_V_1_payload_B       |  8|   0|    8|          0|
+    |outStream_LUMA_V_V_1_sel_rd          |  1|   0|    1|          0|
+    |outStream_LUMA_V_V_1_sel_wr          |  1|   0|    1|          0|
+    |outStream_LUMA_V_V_1_state           |  2|   0|    2|          0|
+    |outStream_grayscale_V_V_1_payload_A  |  8|   0|    8|          0|
+    |outStream_grayscale_V_V_1_payload_B  |  8|   0|    8|          0|
+    |outStream_grayscale_V_V_1_sel_rd     |  1|   0|    1|          0|
+    |outStream_grayscale_V_V_1_sel_wr     |  1|   0|    1|          0|
+    |outStream_grayscale_V_V_1_state      |  2|   0|    2|          0|
+    |tmp_V_reg_96                         |  8|   0|    8|          0|
+    +-------------------------------------+---+----+-----+-----------+
+    |Total                                | 94|   0|   94|          0|
+    +-------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_rst_n                        |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|inStream_V_V_TDATA              |  in |    8|    axis    |       inStream_V_V      |    pointer   |
+|inStream_V_V_TVALID             |  in |    1|    axis    |       inStream_V_V      |    pointer   |
+|inStream_V_V_TREADY             | out |    1|    axis    |       inStream_V_V      |    pointer   |
+|outStream_grayscale_V_V_TDATA   | out |    8|    axis    | outStream_grayscale_V_V |    pointer   |
+|outStream_grayscale_V_V_TVALID  | out |    1|    axis    | outStream_grayscale_V_V |    pointer   |
+|outStream_grayscale_V_V_TREADY  |  in |    1|    axis    | outStream_grayscale_V_V |    pointer   |
+|enable_raw_stream               |  in |    1|   ap_none  |    enable_raw_stream    |    scalar    |
+|outStream_LUMA_V_V_TDATA        | out |    8|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_LUMA_V_V_TVALID       | out |    1|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_LUMA_V_V_TREADY       |  in |    1|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_CHROMA_V_V_TDATA      | out |    8|    axis    |   outStream_CHROMA_V_V  |    pointer   |
+|outStream_CHROMA_V_V_TVALID     | out |    1|    axis    |   outStream_CHROMA_V_V  |    pointer   |
+|outStream_CHROMA_V_V_TREADY     |  in |    1|    axis    |   outStream_CHROMA_V_V  |    pointer   |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 3 2 
+2 --> 4 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_V), !map !25"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_grayscale_V_V), !map !31"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %enable_raw_stream), !map !35"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_LUMA_V_V), !map !41"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_CHROMA_V_V), !map !45"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @ov7670_LUMA_CHROMA_s) nounwind"   --->   Operation 10 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%enable_raw_stream_re = call i1 @_ssdm_op_Read.ap_none.i1(i1 %enable_raw_stream)"   --->   Operation 11 'read' 'enable_raw_stream_re' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %enable_raw_stream, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:5]   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %inStream_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:6]   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_grayscale_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:7]   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_LUMA_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:8]   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_CHROMA_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:9]   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i1* @grayscale_valid, i32 1, [1 x i8]* @p_str1) nounwind" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:12]   --->   Operation 17 'specreset' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %inStream_V_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:15]   --->   Operation 18 'read' 'tmp_V' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%grayscale_valid_load = load i1* @grayscale_valid, align 1" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:16]   --->   Operation 19 'load' 'grayscale_valid_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %grayscale_valid_load, label %1, label %3" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:16]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %enable_raw_stream_re, label %4, label %._crit_edge17" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:26]   --->   Operation 21 'br' <Predicate = (!grayscale_valid_load)> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_CHROMA_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:27]   --->   Operation 22 'write' <Predicate = (!grayscale_valid_load & enable_raw_stream_re)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 23 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_grayscale_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:18]   --->   Operation 23 'write' <Predicate = (grayscale_valid_load)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 24 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_CHROMA_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:27]   --->   Operation 24 'write' <Predicate = (enable_raw_stream_re)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br label %._crit_edge17" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:27]   --->   Operation 25 'br' <Predicate = (enable_raw_stream_re)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br label %5"   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 1> <Delay = 0.00>
+ST_3 : Operation 27 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_grayscale_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:18]   --->   Operation 27 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %enable_raw_stream_re, label %2, label %._crit_edge" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:20]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_LUMA_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:21]   --->   Operation 29 'write' <Predicate = (enable_raw_stream_re)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 4 <SV = 2> <Delay = 0.97>
+ST_4 : Operation 30 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_LUMA_V_V, i8 %tmp_V)" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:21]   --->   Operation 30 'write' <Predicate = (grayscale_valid_load & enable_raw_stream_re)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "br label %._crit_edge" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:21]   --->   Operation 31 'br' <Predicate = (grayscale_valid_load & enable_raw_stream_re)> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "br label %5" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:23]   --->   Operation 32 'br' <Predicate = (grayscale_valid_load)> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.97ns)   --->   "%xor_ln30 = xor i1 %grayscale_valid_load, true" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:30]   --->   Operation 33 'xor' 'xor_ln30' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "store i1 %xor_ln30, i1* @grayscale_valid, align 1" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:30]   --->   Operation 34 'store' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "ret void" [OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp:32]   --->   Operation 35 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ inStream_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outStream_grayscale_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ enable_raw_stream]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ outStream_LUMA_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outStream_CHROMA_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ grayscale_valid]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+specbitsmap_ln0      (specbitsmap  ) [ 00000]
+specbitsmap_ln0      (specbitsmap  ) [ 00000]
+specbitsmap_ln0      (specbitsmap  ) [ 00000]
+specbitsmap_ln0      (specbitsmap  ) [ 00000]
+specbitsmap_ln0      (specbitsmap  ) [ 00000]
+spectopmodule_ln0    (spectopmodule) [ 00000]
+enable_raw_stream_re (read         ) [ 01111]
+specinterface_ln5    (specinterface) [ 00000]
+specinterface_ln6    (specinterface) [ 00000]
+specinterface_ln7    (specinterface) [ 00000]
+specinterface_ln8    (specinterface) [ 00000]
+specinterface_ln9    (specinterface) [ 00000]
+specreset_ln12       (specreset    ) [ 00000]
+tmp_V                (read         ) [ 00111]
+grayscale_valid_load (load         ) [ 01111]
+br_ln16              (br           ) [ 00000]
+br_ln26              (br           ) [ 00000]
+write_ln27           (write        ) [ 00000]
+br_ln27              (br           ) [ 00000]
+br_ln0               (br           ) [ 00000]
+write_ln18           (write        ) [ 00000]
+br_ln20              (br           ) [ 00000]
+write_ln21           (write        ) [ 00000]
+br_ln21              (br           ) [ 00000]
+br_ln23              (br           ) [ 00000]
+xor_ln30             (xor          ) [ 00000]
+store_ln30           (store        ) [ 00000]
+ret_ln32             (ret          ) [ 00000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="inStream_V_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="inStream_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="outStream_grayscale_V_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outStream_grayscale_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="enable_raw_stream">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="enable_raw_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="outStream_LUMA_V_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outStream_LUMA_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="outStream_CHROMA_V_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outStream_CHROMA_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="grayscale_valid">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="grayscale_valid"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ov7670_LUMA_CHROMA_s"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecReset"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.axis.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.axis.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="enable_raw_stream_re_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="1" slack="0"/>
+<pin id="44" dir="0" index="1" bw="1" slack="0"/>
+<pin id="45" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="enable_raw_stream_re/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="tmp_V_read_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="8" slack="0"/>
+<pin id="50" dir="0" index="1" bw="8" slack="0"/>
+<pin id="51" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tmp_V/1 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="grp_write_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="0" slack="0"/>
+<pin id="56" dir="0" index="1" bw="8" slack="0"/>
+<pin id="57" dir="0" index="2" bw="8" slack="0"/>
+<pin id="58" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln27/1 "/>
+</bind>
+</comp>
+
+<comp id="62" class="1004" name="grp_write_fu_62">
+<pin_list>
+<pin id="63" dir="0" index="0" bw="0" slack="0"/>
+<pin id="64" dir="0" index="1" bw="8" slack="0"/>
+<pin id="65" dir="0" index="2" bw="8" slack="0"/>
+<pin id="66" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln18/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="grp_write_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="0" slack="0"/>
+<pin id="72" dir="0" index="1" bw="8" slack="0"/>
+<pin id="73" dir="0" index="2" bw="8" slack="1"/>
+<pin id="74" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="write_ln21/3 "/>
+</bind>
+</comp>
+
+<comp id="77" class="1004" name="grayscale_valid_load_load_fu_77">
+<pin_list>
+<pin id="78" dir="0" index="0" bw="1" slack="0"/>
+<pin id="79" dir="1" index="1" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="grayscale_valid_load/1 "/>
+</bind>
+</comp>
+
+<comp id="81" class="1004" name="xor_ln30_fu_81">
+<pin_list>
+<pin id="82" dir="0" index="0" bw="1" slack="2"/>
+<pin id="83" dir="0" index="1" bw="1" slack="0"/>
+<pin id="84" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="xor(25) " fcode="xor"/>
+<opset="xor_ln30/4 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="store_ln30_store_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="1" slack="0"/>
+<pin id="88" dir="0" index="1" bw="1" slack="0"/>
+<pin id="89" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln30/4 "/>
+</bind>
+</comp>
+
+<comp id="92" class="1005" name="enable_raw_stream_re_reg_92">
+<pin_list>
+<pin id="93" dir="0" index="0" bw="1" slack="1"/>
+<pin id="94" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="enable_raw_stream_re "/>
+</bind>
+</comp>
+
+<comp id="96" class="1005" name="tmp_V_reg_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="8" slack="1"/>
+<pin id="98" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_V "/>
+</bind>
+</comp>
+
+<comp id="103" class="1005" name="grayscale_valid_load_reg_103">
+<pin_list>
+<pin id="104" dir="0" index="0" bw="1" slack="2"/>
+<pin id="105" dir="1" index="1" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opset="grayscale_valid_load "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="46"><net_src comp="18" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="4" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="52"><net_src comp="36" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="0" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="59"><net_src comp="38" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="60"><net_src comp="8" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="61"><net_src comp="48" pin="2"/><net_sink comp="54" pin=2"/></net>
+
+<net id="67"><net_src comp="38" pin="0"/><net_sink comp="62" pin=0"/></net>
+
+<net id="68"><net_src comp="2" pin="0"/><net_sink comp="62" pin=1"/></net>
+
+<net id="69"><net_src comp="48" pin="2"/><net_sink comp="62" pin=2"/></net>
+
+<net id="75"><net_src comp="38" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="76"><net_src comp="6" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="10" pin="0"/><net_sink comp="77" pin=0"/></net>
+
+<net id="85"><net_src comp="40" pin="0"/><net_sink comp="81" pin=1"/></net>
+
+<net id="90"><net_src comp="81" pin="2"/><net_sink comp="86" pin=0"/></net>
+
+<net id="91"><net_src comp="10" pin="0"/><net_sink comp="86" pin=1"/></net>
+
+<net id="95"><net_src comp="42" pin="2"/><net_sink comp="92" pin=0"/></net>
+
+<net id="99"><net_src comp="48" pin="2"/><net_sink comp="96" pin=0"/></net>
+
+<net id="100"><net_src comp="96" pin="1"/><net_sink comp="54" pin=2"/></net>
+
+<net id="101"><net_src comp="96" pin="1"/><net_sink comp="62" pin=2"/></net>
+
+<net id="102"><net_src comp="96" pin="1"/><net_sink comp="70" pin=2"/></net>
+
+<net id="106"><net_src comp="77" pin="1"/><net_sink comp="103" pin=0"/></net>
+
+<net id="107"><net_src comp="103" pin="1"/><net_sink comp="81" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: outStream_grayscale_V_V | {3 }
+	Port: outStream_LUMA_V_V | {4 }
+	Port: outStream_CHROMA_V_V | {2 }
+	Port: grayscale_valid | {4 }
+ - Input state : 
+	Port: ov7670_LUMA_CHROMA : inStream_V_V | {1 }
+	Port: ov7670_LUMA_CHROMA : enable_raw_stream | {1 }
+	Port: ov7670_LUMA_CHROMA : grayscale_valid | {1 }
+  - Chain level:
+	State 1
+		br_ln16 : 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------|---------|---------|
+| Operation|         Functional Unit         |    FF   |   LUT   |
+|----------|---------------------------------|---------|---------|
+|    xor   |          xor_ln30_fu_81         |    0    |    2    |
+|----------|---------------------------------|---------|---------|
+|   read   | enable_raw_stream_re_read_fu_42 |    0    |    0    |
+|          |         tmp_V_read_fu_48        |    0    |    0    |
+|----------|---------------------------------|---------|---------|
+|          |         grp_write_fu_54         |    0    |    0    |
+|   write  |         grp_write_fu_62         |    0    |    0    |
+|          |         grp_write_fu_70         |    0    |    0    |
+|----------|---------------------------------|---------|---------|
+|   Total  |                                 |    0    |    2    |
+|----------|---------------------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++----------------------------+--------+
+|                            |   FF   |
++----------------------------+--------+
+| enable_raw_stream_re_reg_92|    1   |
+|grayscale_valid_load_reg_103|    1   |
+|        tmp_V_reg_96        |    8   |
++----------------------------+--------+
+|            Total           |   10   |
++----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------|------|------|------|--------||---------||---------|
+|       Comp      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-----------------|------|------|------|--------||---------||---------|
+| grp_write_fu_54 |  p2  |   2  |   8  |   16   ||    9    |
+| grp_write_fu_62 |  p2  |   2  |   8  |   16   ||    9    |
+|-----------------|------|------|------|--------||---------||---------|
+|      Total      |      |      |      |   32   ||  3.538  ||    18   |
+|-----------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    -   |    0   |    2   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    3   |    -   |   18   |
+|  Register |    -   |   10   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    3   |   10   |   20   |
++-----------+--------+--------+--------+

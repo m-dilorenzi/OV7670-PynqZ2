@@ -1,0 +1,5 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="39" filename="OV7670_LUMA_CHROMA/ov7670_LUMA_CHROMA.cpp" linenumber="30" name="xor_ln30" contextFuncName="ov7670_LUMA_CHROMA" moduleName="ov7670_LUMA_CHROMA" rtlName="xor_ln30_fu_81_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS"><\/item>
+<\/annotationInfo>
+</annotationInfo>

@@ -1,0 +1,29 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port S_AXI_LITE -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port S_AXIS_S2MM -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port M_AXIS_MM2S -pg 1 -lvl 4 -x 730 -y 180 -defaultsOSRD
+preplace port M00_AXI -pg 1 -lvl 4 -x 730 -y 90 -defaultsOSRD
+preplace port m_axi_mm2s_aclk -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port s2mm_introut -pg 1 -lvl 4 -x 730 -y 270 -defaultsOSRD
+preplace port mm2s_introut -pg 1 -lvl 4 -x 730 -y 240 -defaultsOSRD
+preplace port axi_resetn -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace inst axi_vdma -pg 1 -lvl 2 -x 250 -y 200 -defaultsOSRD
+preplace inst smartconnect -pg 1 -lvl 3 -x 580 -y 90 -defaultsOSRD
+preplace netloc m_axi_mm2s_aclk_1 1 0 3 N 120 70 60 430J
+preplace netloc axi_vdma_s2mm_introut 1 2 2 NJ 260 710J
+preplace netloc axi_vdma_mm2s_introut 1 2 2 NJ 240 NJ
+preplace netloc axi_resetn_1 1 0 3 N 180 80 70 420J
+preplace netloc Conn2 1 0 2 N 150 N
+preplace netloc Conn5 1 2 2 N 180 N
+preplace netloc Conn3 1 3 1 N 90
+preplace netloc axi_vdma_M_AXI_MM2S 1 2 1 440 60n
+preplace netloc axi_vdma_M_AXI_S2MM 1 2 1 450 80n
+preplace netloc Conn1 1 0 2 N 90 60
+levelinfo -pg 1 0 40 250 580 730
+pagesize -pg 1 -db -bbox -sgen -160 0 880 330
+"
+}
+0

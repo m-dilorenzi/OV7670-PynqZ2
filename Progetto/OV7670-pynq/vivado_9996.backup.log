@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr 21 18:26:03 2022
+# Process ID: 9996
+# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14620 C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\OV7670-pynq\OV7670-pynq.xpr
+# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/vivado.log
+# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 719.930 ; gain = 121.934
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Apr 21 18:27:40 2022] Launched synth_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/synth_1/runme.log
+[Thu Apr 21 18:27:41 2022] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1252.965 ; gain = 0.000
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.sdk/design_1_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 21 18:48:22 2022...

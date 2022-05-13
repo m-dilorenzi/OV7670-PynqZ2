@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 26 17:15:53 2022
+# Process ID: 952
+# Current directory: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16112 D:\universita_bologna\1anno\sistemi_digitali\febbraio2022\Sistemi-Digitali-M\Progetto\OV7670-pynq\OV7670-pynq.xpr
+# Log file: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/vivado.log
+# Journal file: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq'
+INFO: [Project 1-313] Project file moved from 'C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 747.301 ; gain = 143.406
+update_compile_order -fileset sources_1
+open_bd_design {D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_true
+Adding component instance block -- xilinx.com:hls:scaleImage:1.0 - scaleImage
+Adding component instance block -- xilinx.com:hls:gray2rgb:1.0 - gray2rgb
+Adding component instance block -- xilinx.com:hls:axistream2axivideo:1.0 - axistream2axivideo
+Adding component instance block -- xilinx.com:hls:convolution_filter:1.0 - convolution_filter
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - axi4s_vid_out
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_true
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary
+Adding component instance block -- xilinx.com:hls:ov7670_interface:1.0 - ov7670_interface
+Adding component instance block -- xilinx.com:hls:LF_valid_to_AXIS:1.0 - LF_valid_to_AXIS
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo
+Adding component instance block -- xilinx.com:hls:ov7670_LUMA_CHROMA:1.0 - ov7670_LUMA_CHROMA
+WARNING: [BD 41-1731] Type mismatch between connected pins: /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface/frame_valid_V(data) and /OV7670_GRAYSCALE_TO_AXIS/c_counter_binary/CLK(clk)
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - reset_24M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - reset_100M
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - reset_48M
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio/gpio_io_o(undef) and /Reset/ext_reset_in(rst)
+Successfully read diagram <design_1> from BD file <D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 953.180 ; gain = 68.250
+write_bd_layout -format pdf -orientation landscape -hierarchy [get_bd_cell OV7670_GRAYSCALE_TO_AXIS] C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+write_bd_layout -format pdf -orientation portrait -scope visible -force -hierarchy [get_bd_cell OV7670_GRAYSCALE_TO_AXIS] C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+write_bd_layout -format pdf -orientation portrait -scope visible -hierarchy [get_bd_cell filter] C:/Users/matte/Desktop/filter.pdf
+C:/Users/matte/Desktop/filter.pdf
+write_bd_layout -format pdf -orientation portrait -hierarchy [get_bd_cell AXI2DVI] C:/Users/matte/Desktop/AXI2DVI.pdf
+C:/Users/matte/Desktop/AXI2DVI.pdf
+set_property location {4 1269 685} [get_bd_cells processing_system7]
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1269 685} [get_bd_cells processing_system7]'
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 26 20:20:41 2022...

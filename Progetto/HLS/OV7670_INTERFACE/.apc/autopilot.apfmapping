@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ov7670_interface.cpp" path="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\OV7670_INTERFACE\ov7670_interface.cpp"/>
+    <originFiles name="ov7670_interface.h" path="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\OV7670_INTERFACE\ov7670_interface.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test_ov7670_interface.cpp" path="C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\OV7670_INTERFACE\test_ov7670_interface.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

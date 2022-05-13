@@ -1,0 +1,9 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_axi_s_inStream_V_V.v"
+sv xil_defaultlib "AESL_axi_s_outStream_CHROMA_V_V.v"
+sv xil_defaultlib "AESL_axi_s_outStream_grayscale_V_V.v"
+sv xil_defaultlib "AESL_axi_s_outStream_LUMA_V_V.v"
+sv xil_defaultlib "AESL_fifo.v"
+sv xil_defaultlib "ov7670_LUMA_CHROMA.autotb.v"
+sv xil_defaultlib "ov7670_LUMA_CHROMA.v"
+

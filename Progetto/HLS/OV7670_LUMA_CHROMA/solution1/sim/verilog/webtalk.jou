@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr  7 11:54:44 2022
+# Process ID: 19728
+# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/xsim.dir/ov7670_LUMA_CHROMA/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/xsim.dir/ov7670_LUMA_CHROMA/webtalk/xsim_webtalk.tcl -notrace

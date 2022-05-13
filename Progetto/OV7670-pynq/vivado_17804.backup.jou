@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 19 22:54:02 2022
+# Process ID: 17804
+# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7296 C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\OV7670-pynq\OV7670-pynq.xpr
+# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/vivado.log
+# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/design_1.bd}

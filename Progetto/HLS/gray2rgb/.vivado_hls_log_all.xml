@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:42.257+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 600, 800, 0>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:60:9)" projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:42.182+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor&lt;HLS_GRAY2RGB, 0, 4096, 600, 800>' to 'CvtColor' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:672:39)" projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:41.268+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;24, 600, 800, 4096>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:78:50)" projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:41.238+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 600 for loop 'loop_height' in function 'hls::Mat2AXIvideo&lt;24, 600, 800, 4096>'." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:39.489+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 800 for loop 'loop_width' in function 'hls::Mat2AXIvideo&lt;24, 600, 800, 4096>'." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:39.324+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'inImage.data_stream.V' (gray2rgb/gray2rgb.cpp:8)." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:38.722+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'outImage.data_stream.V' (gray2rgb/gray2rgb.cpp:9)." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:38.478+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR." projectName="gray2rgb" solutionName="solution1" date="2022-03-29T18:49:37.921+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

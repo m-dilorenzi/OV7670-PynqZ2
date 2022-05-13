@@ -1,0 +1,28 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_100M -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port PCLK -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port clk_48M -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace portBus aresetn_100M -pg 1 -lvl 2 -x 380 -y 140 -defaultsOSRD
+preplace portBus aresetn_24M -pg 1 -lvl 2 -x 380 -y 320 -defaultsOSRD
+preplace portBus reset_24M -pg 1 -lvl 2 -x 380 -y 280 -defaultsOSRD
+preplace portBus aresetn_48M -pg 1 -lvl 2 -x 380 -y 500 -defaultsOSRD
+preplace inst reset_24M -pg 1 -lvl 1 -x 190 -y 280 -defaultsOSRD
+preplace inst reset_100M -pg 1 -lvl 1 -x 190 -y 100 -defaultsOSRD
+preplace inst reset_48M -pg 1 -lvl 1 -x 190 -y 460 -defaultsOSRD
+preplace netloc reset_100M_peripheral_aresetn 1 1 1 NJ 140
+preplace netloc slowest_sync_clk_1 1 0 1 NJ 60
+preplace netloc PCLK_1 1 0 1 NJ 240
+preplace netloc reset_24M_peripheral_aresetn 1 1 1 NJ 320
+preplace netloc reset_24M_peripheral_reset 1 1 1 NJ 280
+preplace netloc ext_reset_in_1 1 0 1 20 80n
+preplace netloc slowest_sync_clk1_1 1 0 1 N 420
+preplace netloc reset_48M_peripheral_aresetn 1 1 1 NJ 500
+levelinfo -pg 1 0 190 380
+pagesize -pg 1 -db -bbox -sgen -130 0 550 560
+"
+}
+0

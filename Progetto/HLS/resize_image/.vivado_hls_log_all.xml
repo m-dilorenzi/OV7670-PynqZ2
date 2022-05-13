@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:54.509+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:54.398+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.708+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.0.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.609+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'k_buf.val.val.1.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.557+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.0.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.499+0200" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf.val.val.1.0'." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.475+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 480, 640, 0>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:60:9)" projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.442+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;8, 600, 800, 0>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:120:50)" projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:52.010+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Resize&lt;0, 480, 640, 600, 800>' to 'Resize' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:2454:9)" projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:51.960+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Resize_opr_linear&lt;0, 480, 640, 600, 800>' to 'Resize_opr_linear' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_imgproc.h:409:21)" projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:51.931+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'inImage.data_stream.V' (resize_image/resize_image.cpp:7)." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:46.599+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'outImage.data_stream.V' (resize_image/resize_image.cpp:8)." projectName="resize_image" solutionName="solution1" date="2022-04-13T17:43:46.109+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

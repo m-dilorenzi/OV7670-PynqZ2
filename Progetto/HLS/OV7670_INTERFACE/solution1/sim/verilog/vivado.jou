@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr  7 00:55:52 2021
+# Process ID: 8220
+# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_INTERFACE/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_INTERFACE/solution1/sim/verilog/vivado.log
+# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_INTERFACE/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+close_sim

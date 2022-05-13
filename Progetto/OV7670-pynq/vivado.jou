@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 26 17:15:53 2022
+# Process ID: 952
+# Current directory: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16112 D:\universita_bologna\1anno\sistemi_digitali\febbraio2022\Sistemi-Digitali-M\Progetto\OV7670-pynq\OV7670-pynq.xpr
+# Log file: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/vivado.log
+# Journal file: D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/universita_bologna/1anno/sistemi_digitali/febbraio2022/Sistemi-Digitali-M/Progetto/OV7670-pynq/OV7670-pynq.srcs/sources_1/bd/design_1/design_1.bd}
+write_bd_layout -format pdf -orientation landscape -hierarchy [get_bd_cell OV7670_GRAYSCALE_TO_AXIS] C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+write_bd_layout -format pdf -orientation portrait -scope visible -force -hierarchy [get_bd_cell OV7670_GRAYSCALE_TO_AXIS] C:/Users/matte/Desktop/OV7670_GRAYSCALE_TO_AXIS.pdf
+write_bd_layout -format pdf -orientation portrait -scope visible -hierarchy [get_bd_cell filter] C:/Users/matte/Desktop/filter.pdf
+write_bd_layout -format pdf -orientation portrait -hierarchy [get_bd_cell AXI2DVI] C:/Users/matte/Desktop/AXI2DVI.pdf
+set_property location {4 1269 685} [get_bd_cells processing_system7]
+undo

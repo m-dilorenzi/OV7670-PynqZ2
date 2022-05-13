@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'count_readings' is power-on initialization." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.916+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'count_lines' is power-on initialization." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.763+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'first' is power-on initialization." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.743+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_valid_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.637+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'line_valid_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.574+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'data_out_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:55:09.538+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:54:42.694+0200" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="OV7670_INTERFACE" solutionName="solution1" date="2021-04-07T00:54:42.613+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

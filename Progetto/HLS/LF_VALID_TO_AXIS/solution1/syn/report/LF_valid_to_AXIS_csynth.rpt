@@ -1,0 +1,147 @@
+
+
+================================================================
+== Vivado HLS Report for 'LF_valid_to_AXIS'
+================================================================
+* Date:           Tue Apr 13 10:40:23 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        LF_VALID_TO_AXIS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     22|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|     48|    -|
+|Register         |        -|      -|      26|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      26|     70|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1_io                 |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state2_io                 |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op19_write_state1     |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op24_write_state2     |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |ap_block_state2                    |    or    |      0|  0|   2|           1|           1|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                              |          |      0|  0|  22|           9|           8|
+    +-----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  15|          3|    1|          3|
+    |outputStream_V_V_1_data_out   |   9|          2|    8|         16|
+    |outputStream_V_V_1_state      |  15|          3|    2|          6|
+    |outputStream_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  48|         10|   12|         27|
+    +------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------+---+----+-----+-----------+
+    |             Name             | FF| LUT| Bits| Const Bits|
+    +------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                     |  2|   0|    2|          0|
+    |frame_valid_read_reg_78       |  1|   0|    1|          0|
+    |line_valid_read_reg_82        |  1|   0|    1|          0|
+    |outputStream_V_V_1_payload_A  |  8|   0|    8|          0|
+    |outputStream_V_V_1_payload_B  |  8|   0|    8|          0|
+    |outputStream_V_V_1_sel_rd     |  1|   0|    1|          0|
+    |outputStream_V_V_1_sel_wr     |  1|   0|    1|          0|
+    |outputStream_V_V_1_state      |  2|   0|    2|          0|
+    |res                           |  1|   0|    1|          0|
+    |res_load_reg_74               |  1|   0|    1|          0|
+    +------------------------------+---+----+-----+-----------+
+    |Total                         | 26|   0|   26|          0|
+    +------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_rst_n                 |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|data_in_V                |  in |    8|   ap_none  |     data_in_V    |    pointer   |
+|frame_valid              |  in |    1|   ap_none  |    frame_valid   |    pointer   |
+|line_valid               |  in |    1|   ap_none  |    line_valid    |    pointer   |
+|outputStream_V_V_TDATA   | out |    8|    axis    | outputStream_V_V |    pointer   |
+|outputStream_V_V_TVALID  | out |    1|    axis    | outputStream_V_V |    pointer   |
+|outputStream_V_V_TREADY  |  in |    1|    axis    | outputStream_V_V |    pointer   |
++-------------------------+-----+-----+------------+------------------+--------------+
+

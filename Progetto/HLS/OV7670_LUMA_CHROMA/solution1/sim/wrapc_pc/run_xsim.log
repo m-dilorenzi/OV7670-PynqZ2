@@ -1,0 +1,183 @@
+Valori campionati grayscale:
+1
+3
+5
+7
+9
+Valori campionati LUMA:
+1
+3
+5
+7
+9
+Valori campionati CHROMA:
+0
+2
+4
+6
+8
+
+C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\OV7670_LUMA_CHROMA\solution1\sim\verilog>set PATH= 
+
+C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\HLS\OV7670_LUMA_CHROMA\solution1\sim\verilog>call C:/Xilinx/Vivado/2019.1/bin/xelab xil_defaultlib.apatb_ov7670_LUMA_CHROMA_top glbl -prj ov7670_LUMA_CHROMA.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s ov7670_LUMA_CHROMA -debug wave 
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ov7670_LUMA_CHROMA_top glbl -prj ov7670_LUMA_CHROMA.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s ov7670_LUMA_CHROMA -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/AESL_axi_s_inStream_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/AESL_axi_s_outStream_CHROMA_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_CHROMA_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/AESL_axi_s_outStream_grayscale_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_grayscale_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/AESL_axi_s_outStream_LUMA_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_LUMA_V_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/ov7670_LUMA_CHROMA.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ov7670_LUMA_CHROMA_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/ov7670_LUMA_CHROMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ov7670_LUMA_CHROMA
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ov7670_LUMA_CHROMA
+Compiling module xil_defaultlib.fifo(DEPTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_inStream_V_V
+Compiling module xil_defaultlib.AESL_axi_s_outStream_grayscale_V...
+Compiling module xil_defaultlib.AESL_axi_s_outStream_LUMA_V_V
+Compiling module xil_defaultlib.AESL_axi_s_outStream_CHROMA_V_V
+Compiling module xil_defaultlib.apatb_ov7670_LUMA_CHROMA_top
+Compiling module work.glbl
+Built simulation snapshot ov7670_LUMA_CHROMA
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/xsim.dir/ov7670_LUMA_CHROMA/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/xsim.dir/ov7670_LUMA_CHROMA/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Apr  7 11:54:37 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 108.996 ; gain = 17.543
+INFO: [Common 17-206] Exiting Webtalk at Thu Apr  7 11:54:37 2022...
+
+****** xsim v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ov7670_LUMA_CHROMA/xsim_script.tcl
+# xsim {ov7670_LUMA_CHROMA} -autoloadwcfg -tclbatch {ov7670_LUMA_CHROMA.tcl}
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ov7670_LUMA_CHROMA.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set outStream_CHROMA_group [add_wave_group outStream_CHROMA(axis) -into $coutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TREADY -into $outStream_CHROMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TVALID -into $outStream_CHROMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_CHROMA_V_V_TDATA -into $outStream_CHROMA_group -radix hex
+## set outStream_LUMA_group [add_wave_group outStream_LUMA(axis) -into $coutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TREADY -into $outStream_LUMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TVALID -into $outStream_LUMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_LUMA_V_V_TDATA -into $outStream_LUMA_group -radix hex
+## set outStream_grayscale_group [add_wave_group outStream_grayscale(axis) -into $coutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TREADY -into $outStream_grayscale_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TVALID -into $outStream_grayscale_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/outStream_grayscale_V_V_TDATA -into $outStream_grayscale_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set enable_raw_stream_group [add_wave_group enable_raw_stream(wire) -into $cinputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/enable_raw_stream -into $enable_raw_stream_group -radix hex
+## set inStream_group [add_wave_group inStream(axis) -into $cinputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TREADY -into $inStream_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TVALID -into $inStream_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/inStream_V_V_TDATA -into $inStream_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_start -into $blocksiggroup
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_done -into $blocksiggroup
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_idle -into $blocksiggroup
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AESL_inst_ov7670_LUMA_CHROMA/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/LENGTH_inStream_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_grayscale_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/LENGTH_enable_raw_stream -into $tb_portdepth_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_LUMA_V_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/LENGTH_outStream_CHROMA_V_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_outStream_CHROMA_group [add_wave_group outStream_CHROMA(axis) -into $tbcoutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TREADY -into $tb_outStream_CHROMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TVALID -into $tb_outStream_CHROMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_CHROMA_V_V_TDATA -into $tb_outStream_CHROMA_group -radix hex
+## set tb_outStream_LUMA_group [add_wave_group outStream_LUMA(axis) -into $tbcoutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TREADY -into $tb_outStream_LUMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TVALID -into $tb_outStream_LUMA_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_LUMA_V_V_TDATA -into $tb_outStream_LUMA_group -radix hex
+## set tb_outStream_grayscale_group [add_wave_group outStream_grayscale(axis) -into $tbcoutputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TREADY -into $tb_outStream_grayscale_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TVALID -into $tb_outStream_grayscale_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/outStream_grayscale_V_V_TDATA -into $tb_outStream_grayscale_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_enable_raw_stream_group [add_wave_group enable_raw_stream(wire) -into $tbcinputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/enable_raw_stream -into $tb_enable_raw_stream_group -radix hex
+## set tb_inStream_group [add_wave_group inStream(axis) -into $tbcinputgroup]
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TREADY -into $tb_inStream_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TVALID -into $tb_inStream_group -color #ffff00 -radix hex
+## add_wave /apatb_ov7670_LUMA_CHROMA_top/inStream_V_V_TDATA -into $tb_inStream_group -radix hex
+## save_wave_config ov7670_LUMA_CHROMA.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 10 [0.00%] @ "125000"
+// RTL Simulation : 1 / 10 [100.00%] @ "175000"
+// RTL Simulation : 2 / 10 [100.00%] @ "205000"
+// RTL Simulation : 3 / 10 [100.00%] @ "235000"
+// RTL Simulation : 4 / 10 [100.00%] @ "265000"
+// RTL Simulation : 5 / 10 [100.00%] @ "295000"
+// RTL Simulation : 6 / 10 [100.00%] @ "325000"
+// RTL Simulation : 7 / 10 [100.00%] @ "355000"
+// RTL Simulation : 8 / 10 [100.00%] @ "385000"
+// RTL Simulation : 9 / 10 [100.00%] @ "415000"
+// RTL Simulation : 10 / 10 [100.00%] @ "445000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 485 ns : File "C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/OV7670_LUMA_CHROMA/solution1/sim/verilog/ov7670_LUMA_CHROMA.autotb.v" Line 411
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Apr  7 11:54:49 2022...
+Valori campionati grayscale:
+1
+3
+5
+7
+9
+Valori campionati LUMA:
+1
+3
+5
+7
+9
+Valori campionati CHROMA:
+0
+2
+4
+6
+8

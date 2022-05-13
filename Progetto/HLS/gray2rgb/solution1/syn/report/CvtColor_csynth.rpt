@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'CvtColor'
+================================================================
+* Date:           Tue Mar 29 18:49:46 2022
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        gray2rgb
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.268|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    | min |   max  | min |   max  |   Type  |
+    +-----+--------+-----+--------+---------+
+    |    1|  481801|    1|  481801|   none  |
+    +-----+--------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+-----+--------+----------+-----------+-----------+---------+----------+
+        |               |    Latency   | Iteration|  Initiation Interval  |   Trip  |          |
+        |   Loop Name   | min |   max  |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +---------------+-----+--------+----------+-----------+-----------+---------+----------+
+        |- loop_height  |    0|  481800|  3 ~ 803 |          -|          -| 0 ~ 600 |    no    |
+        | + loop_width  |    0|     800|         2|          1|          1| 0 ~ 800 |    yes   |
+        +---------------+-----+--------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     64|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    132|    -|
+|Register         |        -|      -|      61|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|      0|      61|    196|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_207_p2                       |     +    |      0|  0|  14|          10|           1|
+    |j_fu_222_p2                       |     +    |      0|  0|  14|          10|           1|
+    |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln1967_fu_202_p2             |   icmp   |      0|  0|  13|          11|          11|
+    |icmp_ln1968_fu_217_p2             |   icmp   |      0|  0|  13|          11|          11|
+    |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_pp0_stage0_iter1  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  64|          48|          30|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  27|          5|    1|          5|
+    |ap_done                      |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |  15|          3|    1|          3|
+    |i_0_i_reg_176                |   9|          2|   10|         20|
+    |j_0_i_reg_187                |   9|          2|   10|         20|
+    |p_dst_data_stream_0_V_blk_n  |   9|          2|    1|          2|
+    |p_dst_data_stream_1_V_blk_n  |   9|          2|    1|          2|
+    |p_dst_data_stream_2_V_blk_n  |   9|          2|    1|          2|
+    |p_src_cols_V_blk_n           |   9|          2|    1|          2|
+    |p_src_data_stream_V_blk_n    |   9|          2|    1|          2|
+    |p_src_rows_V_blk_n           |   9|          2|    1|          2|
+    |real_start                   |   9|          2|    1|          2|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 132|         28|   30|         64|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+----+-----+-----------+
+    |            Name           | FF | LUT| Bits| Const Bits|
+    +---------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                  |   4|   0|    4|          0|
+    |ap_done_reg                |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0    |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1    |   1|   0|    1|          0|
+    |i_0_i_reg_176              |  10|   0|   10|          0|
+    |i_reg_242                  |  10|   0|   10|          0|
+    |icmp_ln1968_reg_247        |   1|   0|    1|          0|
+    |j_0_i_reg_187              |  10|   0|   10|          0|
+    |p_src_cols_V_read_reg_228  |  11|   0|   11|          0|
+    |p_src_rows_V_read_reg_233  |  11|   0|   11|          0|
+    |start_once_reg             |   1|   0|    1|          0|
+    +---------------------------+----+----+-----+-----------+
+    |Total                      |  61|   0|   61|          0|
+    +---------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+|ap_clk                        |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_rst                        |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_start                      |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_full_n                  |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_done                       | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_continue                   |  in |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_idle                       | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|ap_ready                      | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_out                     | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|start_write                   | out |    1| ap_ctrl_hs |        CvtColor       | return value |
+|p_src_rows_V_dout             |  in |   11|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_rows_V_empty_n          |  in |    1|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_rows_V_read             | out |    1|   ap_fifo  |      p_src_rows_V     |    pointer   |
+|p_src_cols_V_dout             |  in |   11|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_cols_V_empty_n          |  in |    1|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_cols_V_read             | out |    1|   ap_fifo  |      p_src_cols_V     |    pointer   |
+|p_src_data_stream_V_dout      |  in |    8|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_src_data_stream_V_empty_n   |  in |    1|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_src_data_stream_V_read      | out |    1|   ap_fifo  |  p_src_data_stream_V  |    pointer   |
+|p_dst_data_stream_0_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_0_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_0_V |    pointer   |
+|p_dst_data_stream_1_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_1_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_1_V |    pointer   |
+|p_dst_data_stream_2_V_din     | out |    8|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_full_n  |  in |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
+|p_dst_data_stream_2_V_write   | out |    1|   ap_fifo  | p_dst_data_stream_2_V |    pointer   |
++------------------------------+-----+-----+------------+-----------------------+--------------+
+

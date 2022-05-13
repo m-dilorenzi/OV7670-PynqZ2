@@ -1,0 +1,28 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port s_axi_AXILiteS -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port in_img -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port out_img -pg 1 -lvl 6 -x 1480 -y 200 -defaultsOSRD
+preplace port ap_clk -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port ap_rstn -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace inst constant_true -pg 1 -lvl 1 -x 100 -y 250 -defaultsOSRD
+preplace inst convolution_filter -pg 1 -lvl 2 -x 360 -y 120 -defaultsOSRD
+preplace inst scaleImage -pg 1 -lvl 4 -x 1000 -y 160 -defaultsOSRD
+preplace inst gray2rgb -pg 1 -lvl 5 -x 1310 -y 200 -defaultsOSRD
+preplace inst axistream2axivideo -pg 1 -lvl 3 -x 690 -y 120 -defaultsOSRD
+preplace netloc constant_true_dout 1 1 4 190J 240 520J 20 840J 60 1150J
+preplace netloc ap_clk_1 1 0 5 NJ 160 180 10 530 220 840 260 1150J
+preplace netloc ap_rst_n_1 1 0 5 NJ 190 200 230 540 230 850 270 1160J
+preplace netloc axistream2axivideo_outStream 1 3 1 N 120
+preplace netloc Conn1 1 0 2 NJ 70 NJ
+preplace netloc convolution_filter_out_img_V 1 2 1 N 120
+preplace netloc Conn3 1 0 2 NJ 130 NJ
+preplace netloc Conn2 1 5 1 N 200
+preplace netloc scaleImage_outStream 1 4 1 N 160
+levelinfo -pg 1 0 100 360 690 1000 1310 1480
+pagesize -pg 1 -db -bbox -sgen -140 0 1580 310
+"
+}
+0

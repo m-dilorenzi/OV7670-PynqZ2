@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vivado HLS Report for 'Resize'
+================================================================
+* Date:           Wed Apr 13 17:44:08 2022
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        resize_image
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.612|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |   49|  1089585|   49|  1089585|   none  |
+    +-----+---------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------+-------------------+-----+---------+-----+---------+---------+
+        |                              |                   |    Latency    |    Interval   | Pipeline|
+        |           Instance           |       Module      | min |   max   | min |   max   |   Type  |
+        +------------------------------+-------------------+-----+---------+-----+---------+---------+
+        |grp_Resize_opr_linear_fu_160  |Resize_opr_linear  |   48|  1089584|   48|  1089584|   none  |
+        +------------------------------+-------------------+-----+---------+-----+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|      2|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        2|     16|    8112|   6792|    0|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|    105|    -|
+|Register         |        -|      -|      48|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        2|     16|    8160|   6899|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |    ~0   |      7|       7|     12|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------+-------------------+---------+-------+------+------+-----+
+    |           Instance           |       Module      | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +------------------------------+-------------------+---------+-------+------+------+-----+
+    |grp_Resize_opr_linear_fu_160  |Resize_opr_linear  |        2|     16|  8112|  6792|    0|
+    +------------------------------+-------------------+---------+-------+------+------+-----+
+    |Total                         |                   |        2|     16|  8112|  6792|    0|
+    +------------------------------+-------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------+----+-----------+-----+-----------+
+    |            Name           | LUT| Input Size| Bits| Total Bits|
+    +---------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                  |  15|          3|    1|          3|
+    |ap_done                    |   9|          2|    1|          2|
+    |p_dst_cols_V_blk_n         |   9|          2|    1|          2|
+    |p_dst_cols_V_out_blk_n     |   9|          2|    1|          2|
+    |p_dst_data_stream_V_write  |   9|          2|    1|          2|
+    |p_dst_rows_V_blk_n         |   9|          2|    1|          2|
+    |p_dst_rows_V_out_blk_n     |   9|          2|    1|          2|
+    |p_src_cols_V_blk_n         |   9|          2|    1|          2|
+    |p_src_data_stream_V_read   |   9|          2|    1|          2|
+    |p_src_rows_V_blk_n         |   9|          2|    1|          2|
+    |real_start                 |   9|          2|    1|          2|
+    +---------------------------+----+-----------+-----+-----------+
+    |Total                      | 105|         23|   11|         23|
+    +---------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+----+----+-----+-----------+
+    |                    Name                   | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                  |   2|   0|    2|          0|
+    |ap_done_reg                                |   1|   0|    1|          0|
+    |grp_Resize_opr_linear_fu_160_ap_start_reg  |   1|   0|    1|          0|
+    |p_dst_cols_V_read_reg_181                  |  11|   0|   11|          0|
+    |p_dst_rows_V_read_reg_176                  |  11|   0|   11|          0|
+    |p_src_cols_V_read_reg_191                  |  11|   0|   11|          0|
+    |p_src_rows_V_read_reg_186                  |  10|   0|   10|          0|
+    |start_once_reg                             |   1|   0|    1|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+    |Total                                      |  48|   0|   48|          0|
+    +-------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+---------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++-----------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs |        Resize       | return value |
+|start_full_n                 |  in |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_done                      | out |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs |        Resize       | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs |        Resize       | return value |
+|start_out                    | out |    1| ap_ctrl_hs |        Resize       | return value |
+|start_write                  | out |    1| ap_ctrl_hs |        Resize       | return value |
+|p_src_rows_V_dout            |  in |   10|   ap_fifo  |     p_src_rows_V    |    pointer   |
+|p_src_rows_V_empty_n         |  in |    1|   ap_fifo  |     p_src_rows_V    |    pointer   |
+|p_src_rows_V_read            | out |    1|   ap_fifo  |     p_src_rows_V    |    pointer   |
+|p_src_cols_V_dout            |  in |   11|   ap_fifo  |     p_src_cols_V    |    pointer   |
+|p_src_cols_V_empty_n         |  in |    1|   ap_fifo  |     p_src_cols_V    |    pointer   |
+|p_src_cols_V_read            | out |    1|   ap_fifo  |     p_src_cols_V    |    pointer   |
+|p_src_data_stream_V_dout     |  in |    8|   ap_fifo  | p_src_data_stream_V |    pointer   |
+|p_src_data_stream_V_empty_n  |  in |    1|   ap_fifo  | p_src_data_stream_V |    pointer   |
+|p_src_data_stream_V_read     | out |    1|   ap_fifo  | p_src_data_stream_V |    pointer   |
+|p_dst_rows_V_dout            |  in |   11|   ap_fifo  |     p_dst_rows_V    |    pointer   |
+|p_dst_rows_V_empty_n         |  in |    1|   ap_fifo  |     p_dst_rows_V    |    pointer   |
+|p_dst_rows_V_read            | out |    1|   ap_fifo  |     p_dst_rows_V    |    pointer   |
+|p_dst_cols_V_dout            |  in |   11|   ap_fifo  |     p_dst_cols_V    |    pointer   |
+|p_dst_cols_V_empty_n         |  in |    1|   ap_fifo  |     p_dst_cols_V    |    pointer   |
+|p_dst_cols_V_read            | out |    1|   ap_fifo  |     p_dst_cols_V    |    pointer   |
+|p_dst_data_stream_V_din      | out |    8|   ap_fifo  | p_dst_data_stream_V |    pointer   |
+|p_dst_data_stream_V_full_n   |  in |    1|   ap_fifo  | p_dst_data_stream_V |    pointer   |
+|p_dst_data_stream_V_write    | out |    1|   ap_fifo  | p_dst_data_stream_V |    pointer   |
+|p_dst_rows_V_out_din         | out |   11|   ap_fifo  |   p_dst_rows_V_out  |    pointer   |
+|p_dst_rows_V_out_full_n      |  in |    1|   ap_fifo  |   p_dst_rows_V_out  |    pointer   |
+|p_dst_rows_V_out_write       | out |    1|   ap_fifo  |   p_dst_rows_V_out  |    pointer   |
+|p_dst_cols_V_out_din         | out |   11|   ap_fifo  |   p_dst_cols_V_out  |    pointer   |
+|p_dst_cols_V_out_full_n      |  in |    1|   ap_fifo  |   p_dst_cols_V_out  |    pointer   |
+|p_dst_cols_V_out_write       | out |    1|   ap_fifo  |   p_dst_cols_V_out  |    pointer   |
++-----------------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,0 +1,510 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 28 18:42:53 2022
+# Process ID: 5116
+# Current directory: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11268 C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.xpr
+# Log file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/vivado.log
+# Journal file: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/mazzo/Desktop/Uni/Sistemi-Digitali/Sistemi-Digitali-M/Progetto/progetto_vivado' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_tpg_0_0' generated file not found 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_tpg_0_0' generated file not found 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_tpg_0_0' generated file not found 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_tpg_0_0' generated file not found 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_v_tpg_0_0' generated file not found 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:48 ; elapsed = 00:00:33 . Memory (MB): peak = 900.426 ; gain = 61.465
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all design_1_v_tpg_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_v_tpg_0_0_synth_1
+[Mon Mar 28 18:44:39 2022] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_v_tpg_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files -ipstatic_source_dir C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/modelsim} {questa=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/questa} {riviera=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/riviera} {activehdl=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+catch { config_ip_cache -export [get_ips -all design_1_v_tpg_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 2 design_1_v_tpg_0_0_synth_1
+[Sun Mar 28 18:53:33 2021] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_v_tpg_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files -ipstatic_source_dir C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/modelsim} {questa=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/questa} {riviera=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/riviera} {activehdl=C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+reset_run design_1_v_tpg_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = 5ddf917799dfceae; cache size = 71.565 MB.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1406.621 ; gain = 0.000
+[Sun Mar 28 19:02:14 2021] Launched design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Sun Mar 28 19:02:14 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1406.621 ; gain = 0.000
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.sdk/design_1_wrapper.hdf
+
+open_bd_design {C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - reset_24M
+Adding component instance block -- xilinx.com:hls:scaleImage:1.0 - scaleImage
+Adding component instance block -- xilinx.com:hls:axistream2axivideo:1.0 - axistream2axivideo
+Adding component instance block -- xilinx.com:hls:convolution_filter:1.0 - convolution_filter
+Adding component instance block -- xilinx.com:hls:gray2rgb:1.0 - gray2rgb
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constant_true
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- digilentinc.com:ip:rgb2dvi:1.4 - rgb2dvi
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - axi4s_vid_out
+Adding component instance block -- xilinx.com:ip:v_tc:6.1 - v_tc
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - const_true
+Adding component instance block -- xilinx.com:hls:LF_valid_to_AXIS:1.0 - LF_valid_to_AXIS_0
+Adding component instance block -- xilinx.com:hls:ov7670_LUMA_CHROMA:1.0 - ov7670_LUMA_CHROMA_0
+Adding component instance block -- xilinx.com:hls:ov7670_interface:1.0 - ov7670_interface_0
+Adding component instance block -- xilinx.com:ip:c_counter_binary:12.0 - c_counter_binary_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/frame_valid_V(data) and /OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/CLK(clk)
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - reset_100M
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_0
+Adding component instance block -- xilinx.com:ip:v_tpg:8.0 - v_tpg_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_24M
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio/gpio_io_o(undef) and /reset_24M/ext_reset_in(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio/gpio_io_o(undef) and /reset_100M/ext_reset_in(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /axi_gpio/gpio_io_o(undef) and /rst_clk_wiz_24M/ext_reset_in(rst)
+Successfully read diagram <design_1> from BD file <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1406.621 ; gain = 0.000
+delete_bd_objs [get_bd_cells rst_clk_wiz_24M]
+delete_bd_objs [get_bd_nets rst_clk_wiz_24M_peripheral_aresetn]
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins v_tpg_0/ap_clk]
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins ps7_0_axi_periph/M05_ACLK]
+disconnect_bd_net /clk_wiz_0_clk_out1 [get_bd_pins axi_vdma/s_axis_s2mm_aclk]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7/FCLK_CLK0 (100 MHz)" }  [get_bd_pins ps7_0_axi_periph/M05_ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/processing_system7/FCLK_CLK0 (100 MHz)" }  [get_bd_pins axi_vdma/s_axis_s2mm_aclk]
+INFO: [BD 5-455] Automation on '/v_tpg_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+endgroup
+save_bd_design
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /Interrupt/axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-927] Following properties on pin /AXI2DVI/rgb2dvi/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/data_in_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/href_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/vsync_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_24M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/v_tc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/axi4s_vid_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/rgb2dvi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/constant_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/scaleImage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/gray2rgb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/axistream2axivideo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/convolution_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma .
+Exporting to file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/const_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_tpg_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+Exporting to file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = a3df73975426b108; cache size = 71.565 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bff70cfbc061a5b1; cache size = 71.565 MB.
+[Mon Mar 28 19:52:24 2022] Launched design_1_axi_vdma_0_0_synth_1, design_1_axi_intc_0_0_synth_1, design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_vdma_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_axi_vdma_0_0_synth_1/runme.log
+design_1_axi_intc_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_axi_intc_0_0_synth_1/runme.log
+design_1_v_tpg_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Mon Mar 28 19:52:24 2022] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1440.082 ; gain = 33.461
+startgroup
+set_property -dict [list CONFIG.c_use_s2mm_fsync {2}] [get_bd_cells axi_vdma]
+endgroup
+reset_run synth_1
+reset_run design_1_v_tpg_0_0_synth_1
+save_bd_design
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run design_1_axi_vdma_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /Interrupt/axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-927] Following properties on pin /AXI2DVI/rgb2dvi/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/data_in_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/href_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/vsync_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_24M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/v_tc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/axi4s_vid_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/rgb2dvi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/constant_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/scaleImage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/gray2rgb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/axistream2axivideo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/convolution_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma .
+Exporting to file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/const_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+Exporting to file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = a3df73975426b108; cache size = 81.718 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bff70cfbc061a5b1; cache size = 81.718 MB.
+[Sun Mar 28 20:18:00 2021] Launched design_1_axi_vdma_0_0_synth_1, design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_vdma_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_axi_vdma_0_0_synth_1/runme.log
+design_1_v_tpg_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Sun Mar 28 20:18:00 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1563.906 ; gain = 111.684
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.sdk/design_1_wrapper.hdf
+
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins v_tpg_0/ap_clk]
+disconnect_bd_net /proc_sys_reset_0_peripheral_aresetn [get_bd_pins v_tpg_0/ap_rst_n]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins axi_vdma/s_axis_s2mm_aclk]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins ps7_0_axi_periph/M05_ACLK]
+disconnect_bd_net /proc_sys_reset_0_peripheral_aresetn [get_bd_pins ps7_0_axi_periph/M05_ARESETN]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/PCLK (24 MHz)" }  [get_bd_pins ps7_0_axi_periph/M05_ACLK]
+connect_bd_net [get_bd_ports PCLK] [get_bd_pins axi_vdma/s_axis_s2mm_aclk]
+save_bd_design
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_v_tpg_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /Interrupt/axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /AXI2DVI/rgb2dvi/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/data_in_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/href_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/vsync_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_24M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/v_tc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/axi4s_vid_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/rgb2dvi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/constant_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/scaleImage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/gray2rgb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/axistream2axivideo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/convolution_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma .
+Exporting to file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/const_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0 .
+WARNING: [IP_Flow 19-1971] File named "sim/design_1_v_tpg_0_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/auto_cc .
+Exporting to file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = a3df73975426b108; cache size = 97.774 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_1, cache-ID = 9aecbad1a1913440; cache size = 97.774 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bff70cfbc061a5b1; cache size = 97.774 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_intc_0_0, cache-ID = e5bbb70d42c7c40b; cache size = 97.774 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = 5ddf917799dfceae; cache size = 97.774 MB.
+config_ip_cache: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1699.832 ; gain = 0.000
+[Mon Mar 28 22:42:49 2022] Launched design_1_axi_vdma_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axi_vdma_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_axi_vdma_0_0_synth_1/runme.log
+synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Mon Mar 28 22:42:49 2022] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1699.832 ; gain = 122.945
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.sdk/design_1_wrapper.hdf
+
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M05_AXI] [get_bd_intf_nets v_tpg_0_m_axis_video] [get_bd_cells v_tpg_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins filter/outStream_0] [get_bd_intf_pins axi_vdma/S_AXIS_S2MM]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {5}] [get_bd_cells ps7_0_axi_periph]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+xit::source_ipfile: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1726.883 ; gain = 0.000
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /Interrupt/axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /AXI2DVI/rgb2dvi/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/data_in_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/href_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/vsync_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_24M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/v_tc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/axi4s_vid_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/rgb2dvi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/constant_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/scaleImage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/gray2rgb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/axistream2axivideo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/convolution_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma .
+Exporting to file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/const_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+Exporting to file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = a3df73975426b108; cache size = 107.686 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bff70cfbc061a5b1; cache size = 107.686 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = de217feead772d41; cache size = 107.686 MB.
+[Mon Mar 28 23:16:15 2022] Launched synth_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Mon Mar 28 23:16:16 2022] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1828.348 ; gain = 114.871
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.sdk/design_1_wrapper.hdf
+
+set_property location {4 1524 682} [get_bd_cells axi_iic_0]
+set_property location {2 673 906} [get_bd_cells Interrupt]
+set_property location {4 1593 879} [get_bd_cells clk_wiz]
+set_property location {4 1546 616} [get_bd_cells axi_iic_0]
+set_property location {4 1545 808} [get_bd_cells clk_wiz]
+set_property location {4 1509 1027} [get_bd_cells axi_gpio]
+regenerate_bd_layout -routing
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS/AXIStream2AXIVideo/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/vivado-library-master'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/HLS'.
+update_ip_catalog: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2182.852 ; gain = 338.395
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:axistream2axivideo:1.0 [get_ips  design_1_axistream2axivideo_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_axistream2axivideo_0_0 (Axistream2axivideo 1.0) from revision 2102231602 to revision 2103290008
+WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 'outStream_TVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_axistream2axivideo_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_axistream2axivideo_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_e76f1ea8.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_axistream2axivideo_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/processing_system7' with propagated value(100). Command ignored
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /Interrupt/axi_intc_0: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [BD 41-927] Following properties on pin /AXI2DVI/rgb2dvi/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_processing_system7_0_0_FCLK_CLK1 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_ap_clk_0 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/data_in_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/href_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+WARNING: [BD 41-927] Following properties on pin /OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/vsync_V have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	LAYERED_METADATA=xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}} 
+Wrote  : <C:\Users\mazzo\Desktop\Sistemi-Digitali-M\Progetto\progetto_vivado\hdmi_example.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_e76f1ea8.ui> 
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Wrote  : <C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ui/bd_e76f1ea8.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_24M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/v_tc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/axi4s_vid_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI2DVI/rgb2dvi .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/constant_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/scaleImage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/gray2rgb .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/axistream2axivideo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block filter/convolution_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma .
+Exporting to file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/hw_handoff/design_1_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/synth/design_1_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Interrupt/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/const_true .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/ov7670_LUMA_CHROMA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/auto_cc .
+Exporting to file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = a3df73975426b108; cache size = 107.686 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bff70cfbc061a5b1; cache size = 107.686 MB.
+[Tue Mar 29 00:12:34 2022] Launched design_1_axistream2axivideo_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_axistream2axivideo_0_0_synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/design_1_axistream2axivideo_0_0_synth_1/runme.log
+synth_1: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/synth_1/runme.log
+[Tue Mar 29 00:12:34 2022] Launched impl_1...
+Run output will be captured here: C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2306.125 ; gain = 2.320
+file copy -force C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.runs/impl_1/design_1_wrapper.sysdef C:/Users/mazzo/Desktop/Sistemi-Digitali-M/Progetto/progetto_vivado/hdmi_example.sdk/design_1_wrapper.hdf
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 29 00:39:15 2022...
